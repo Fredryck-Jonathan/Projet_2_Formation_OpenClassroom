@@ -1,0 +1,3119 @@
+/* importation de la police d'écriture par défaut */
+
+
+
+
+/*Application de la police sur toute la page */
+
+body {
+
+	font-family: 'Raleway' , Arial, serif;
+	box-sizing: content-box;
+	overflow-x: hidden;
+	font-weight: normal;
+
+}
+
+
+
+main
+{
+
+width: 95%;
+margin: auto;
+
+
+}
+
+header
+{
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section pour les écran supérieur a 992 */
+
+@media screen and (min-width: 992px){
+
+
+
+/* réalisation de l'header version desktop */
+
+header 
+{
+
+display: flex;
+justify-content: space-between;
+
+
+}
+
+header ul
+
+{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+
+}
+
+#Logo
+{
+	z-index: 20;
+	padding-left: 30px;
+	padding-top: 10px;
+
+}
+
+
+header ul li
+{
+	text-decoration-style: none;
+	margin: 30px 80px 30px 40px;
+
+}
+
+header ul li a 
+
+{
+
+	text-decoration: none;
+	padding: 50px 10px 0px 10px;
+	color: black;
+	padding-left: 30px;
+	padding-right: 30px;
+	overflow: visible;
+	z-index: 500;
+}
+
+header ul li a:hover
+
+{
+overflow: visible;
+border-top: 5px solid #0065FC;
+color: #0065FC;
+
+}
+
+/* réalisation du navigateur de recherche */
+
+section h1
+{
+
+ font-size: 26px;
+ font-weight: bold;
+}
+
+
+section h2
+
+{
+position: relative;
+top: -10px;
+left: 5px;
+font-size: 18px;
+color: grey;
+}
+
+
+
+#logolocation
+{
+	
+	position: relative;
+	background-color: #F2F2F2;
+	border: 3px rgba(0, 0, 0, 1.0) ;
+	border-radius: 10px;
+	padding: 10px 20px 10px 10px;
+	margin: 0px 0px 0px 0px;
+	z-index: 20;
+	left: 10px;
+
+
+}
+
+#zonerecherche
+{
+
+position: relative;
+left: 20px;
+display: flex;
+
+
+}
+
+#premiersec
+{
+
+	position: relative;
+	left: 40px;
+
+}
+
+
+
+
+#rechercherbleu
+{
+	position: relative;
+	text-decoration: none;
+	color: white;
+	background-color: #0065FC;
+	border: 3px rgba(0, 0, 0, 0.0);
+	border-radius: 10px;
+	padding: 9px 10px 9px 20px;
+	right: 25px;
+	z-index: 20;
+	margin-left: 10px;
+	font-weight: bold;
+
+}
+
+
+#rechercherbleu:hover
+{
+	text-decoration: none;
+	color: white;
+	background-color: #0075Fb;
+	border: 3px rgba(0, 0, 0, 0.0);
+	border-radius: 10px;
+	z-index: 20;
+	font-weight: bold;
+}
+
+
+section form input
+{
+	position: relative;
+	background-color: white;
+	text-decoration: none;
+	padding: 12px 15px 10px 10px;
+	border: rgba(0, 0, 0, 0.0);
+	z-index: 100;
+	visibility: visible;
+	font-weight: bold;
+
+
+}
+
+#loupe
+{
+visibility: hidden;
+
+}
+
+/*Nous allons réaliser l'espace filtre */
+
+
+#espacefiltre
+{
+position: relative;
+left: 40px;
+display: flex;
+flex-direction: row;	
+
+}
+
+#listfiltre
+{
+
+display: flex;
+flex-direction: row;
+text-decoration: none;
+list-style-type: none;
+justify-content: space-around;
+}
+
+#listfiltre ul
+{
+
+display: flex;
+justify-content: space-around;
+
+}
+
+
+
+#listfiltre li
+{
+
+text-decoration: none;
+background-color: white;
+border: 2px solid rgba(242, 242, 242, 1.0);
+border-radius: 50px;
+padding: 0px 15px 0px 0px;
+margin: 0px 15px 0px 15px;
+display: flex;
+justify-content: space-around;
+
+}
+
+
+#économie, #Familial, #romantique, #Animaux
+{
+
+background-color: #DEEBFF;
+color: #0065FC;
+border: rgba(0, 0, 0, 0.0);
+border-radius: 50px;
+padding: 15px 15px 15px 15px;
+margin: 0px 10px 0px 0px;
+
+}
+
+#Familial
+{
+
+padding: 15px 17px 15px 17px;
+
+}
+
+
+
+#listfiltre a
+{
+display: flex;
+
+text-decoration: none;
+color: black;
+font-weight: bold;
+background-color: white;
+align-items: center;
+justify-content: space-around;
+}
+
+
+#infosup
+{
+position: relative;
+left: 40px;
+bottom: 10px;
+}
+
+
+
+#info
+{
+
+color: #0065FC ;
+border: 2px solid rgba(242, 242, 242, 1.0);
+border-radius: 500px;
+padding: 3px 7px 3px 7px;
+background-color: white;
+position: relative;
+}
+
+#plusde500
+{
+
+color: grey;
+position: relative;
+
+
+}
+
+
+
+/* test hebergement et pop */
+
+#deuxiemesec
+{
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+#hebergementmars
+{
+overflow: visible;
+background-color: #F2F2F2 ;
+border-radius: 30px;
+padding: 0px 0px 0px 0px ;
+width: 65%;
+height: 70%;
+position: relative;
+left: -3%;
+
+}
+
+#titreheber
+{
+	font-size: 20px;
+	position: relative;
+	top: 20px;
+	left: 30px;
+}
+
+
+#hebermarscard
+{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+overflow: visible;
+justify-content: center;
+}
+
+.card {
+  width: 29%; 
+  height: 270px;
+  margin: 30px 20px 20px 20px ; 
+  background-color: white; 
+  box-shadow: 0px 5px 20px #999; 
+  border-radius: 30px;
+  overflow: visible;
+
+
+}
+.card a { 
+  color: #333; 
+  text-decoration: none;
+ 
+}
+
+
+.card-image {
+  height: 170px;
+  position: relative;
+  overflow: hidden;  
+  padding: 10px 10px 10px 10px ;
+  border: 7px solid white;
+  border-radius: 30px ;
+  z-index: 10;
+
+
+}
+.card-image img {
+  width: 130%;
+  height: 130%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  margin: 10px 10px 10px 0px;
+  padding: 30px 30px 30px 30px;
+  border: 0px solid white;
+  border-radius: 10px ;
+
+
+}
+
+#hotelmer img
+{
+width: 110%;
+transform: translate(-50%, -55%);
+height: 180%;
+
+}
+
+#hotelamina img
+{
+width: 110%;
+transform: translate(-50%, -55%);
+height: 200%;
+}
+
+
+#aubergepanier img
+{
+
+width: 110%;
+transform: translate(-50%, -60%);
+height: 100%;
+
+
+}
+
+
+#hotelport img
+{
+
+width: 130%;
+transform: translate(-50%, -60%);
+height: 100%;
+
+
+}
+
+
+#hotelmouettes img
+{
+
+width: 110%;
+transform: translate(-50%, -55%);
+height: 120%;
+
+
+}
+
+
+.card-date
+{
+	margin: 0px -20px 0px -20px;
+	font-size: 20px;
+	font-weight: 900;
+	position: relative;
+	bottom: 80px;
+	left: 10px;
+
+	padding: 0px 5px 0px 12px;
+
+	overflow: visible;
+	z-index: 20;
+
+
+}
+
+.card-title
+{
+	margin: -45px -13px 0px -14px;
+	font-size: 10px;
+		position: relative;
+	bottom: 100px;
+	font-weight: normal;
+	background-color: white;
+	padding: 35px 20px 0px 16px ;
+	z-index: 10;
+
+}
+
+.card-excerpt
+{
+
+	position: relative;
+	bottom: 100px;
+
+}
+
+
+.card-date, .card-title , .card-excerpt{
+  text-align:left ;
+
+ 
+
+}
+
+.card-body {
+  position: relative;
+  text-align:center;  
+  padding: 30px 20px 0px 20px;
+  z-index: 30;
+  overflow: visible;
+}
+
+.etoilegrise
+{
+
+	color: grey;
+
+}
+
+.etoilebleu
+{
+
+color: #0065FC;
+
+}
+
+#afficherplus
+{
+
+	margin: -15px 1000px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	overflow: visible;
+	z-index: 40;
+}
+
+#afficherplus a
+{
+
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+
+}
+
+strong
+{
+
+font-weight: bold;
+
+}
+
+
+
+/* test POP */
+
+#pop
+{
+display: flex;
+flex-direction: column;
+background-color: #F2F2F2 ;
+border: 1px solid rgba(0, 0, 0, 0.0);
+border-radius: 30px;
+padding: 0px 0px 0px 0px ;
+position: relative;
+left: 50px;
+width: 25%;
+}
+
+#pop div i
+{
+
+visibility: visible;
+
+}
+
+
+#titrepop
+{
+
+	font-size: 17px;
+	position: relative;
+	top: 20px;
+	left: 30px;
+
+}
+
+.cardpop {
+
+
+  max-width: 400px; 
+  max-height: 135px;
+  margin: 12px 5px 65px 20px ; 
+  background-color: white; /
+  box-shadow: 10px 5px 20px #999; 
+  border-radius: 30px;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  box-shadow: 0px 5px 20px #999;
+
+
+}
+
+
+.cardpop a { /*5*/
+  color: #333; 
+  text-decoration: none;
+
+}
+
+
+.cardpop-image {
+  height: 125px;
+  position: relative;
+  overflow: hidden;  
+  width: 40%;
+  border: 5px solid white;
+  border-radius: 30px 0px 0px 30px ;*
+
+
+
+}
+.cardpop-image img {
+  width: 140%;
+  height: 190%;
+  position: absolute;
+  top: -7px;
+  left: -15%;
+  transform: translate( -10%, -28%);
+	margin: 10px 10px 10px 0px;
+  padding: 10px 10px 10px 10px;
+  border: 0px solid white;
+  border-radius: 10px 0px 0px 0px ;
+  object-fit: contain;
+}
+
+.cardpop-date
+{
+	margin: 0px 0px 0px 0px;
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	bottom: 160px;
+	left: 165px;
+	display: flex;
+	flex-wrap: wrap;
+
+
+
+
+
+}
+
+.cardpop-title
+{
+	margin: 0px 0px 0px 0px;
+	font-size: 10px;
+	position: relative;
+	bottom: 175px;
+	left: 165px;
+	
+
+
+}
+
+.cardpop-excerpt
+{
+
+	position: relative;
+	bottom: 180px;
+	left: 165px;
+
+}
+
+
+.cardpop-date, .cardpop-title , .cardpop-excerpt{
+  text-align:left ;
+  font-weight: bold;
+
+}
+
+.cardpop-body {
+   text-align:center;  
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+
+
+#pophotel
+{
+position: relative;
+transform: translate(-10% -90%);
+
+}
+
+
+
+/* test */
+
+
+#troisiemesection
+{
+margin: 0px 0px 60px 0px;
+
+
+}
+
+#titreactivite
+{
+margin: 40px 0px 20px 0px;
+font-size: 20px ;
+position: relative;
+top: 5%;
+left: 3%;
+}
+
+
+
+#touteslescolomnes
+{display: flex;
+flex-direction: row;
+justify-content: space-around;}
+
+
+.cardactivite {
+  width: 400px;
+  height: 598px; /*1*/
+  margin: 0px auto; /*2*/
+  background-color: white; /*3*/
+  box-shadow: 0px 5px 20px #999; /*4*/
+  border-radius: 30px;
+  position: relative;
+  top: 5px;
+}
+.cardactivite a { /*5*/
+  color: #333; 
+  text-decoration: none;
+}
+.cardactivite:hover .card-image img { /*6*/
+  width: 160%;
+;
+}
+
+.cardactivite-image {
+  height: 90%;/*1*/
+  position: relative;/*2*/
+  overflow: hidden;/*3*/
+  border-radius: 30px 30px 0px 0px ;
+}
+.cardactivite-image img {
+  width: 400%;/*4*/
+  height: 200%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-70%, -70%);
+
+}
+
+.cardactivite-body {
+    text-align:center;  /*1*/
+  padding: 15px 20px; /*2*/
+  box-sizing: border-box; /*3*/
+}
+
+.cardactivite-date {
+ 
+  text-align:left;
+  text-transform:uppercase;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  bottom: 15px;
+}
+
+
+
+/* pour les petites colomne */
+
+
+.cardactivitev2 {
+  width: 400px;
+  height: 292px; /*1*/
+  margin: 0px 0px 20px 0px; /*2*/
+  background-color: white; /*3*/
+  box-shadow: 0px 5px 20px #999; /*4*/
+  border-radius: 30px;
+}
+.cardactivitev2 a { /*5*/
+  color: #333; 
+  text-decoration: none;
+}
+
+
+.cardactivitev2-image {
+  height: 230px;/*1*/
+  position: relative;/*2*/
+  overflow: hidden;/*3*/
+  border-radius: 30px 30px 0px 0px ;
+}
+.cardactivitev2-image img {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+
+}
+
+.cardactivitev2-body {
+    text-align:center;  /*1*/
+  padding: 15px 20px; /*2*/
+  box-sizing: border-box; /*3*/
+}
+
+.cardactivitev2-date {
+ 
+  text-align:left;
+  text-transform:uppercase;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  bottom: 15px;
+}
+
+
+/*individuelement */
+
+#fortpo img{
+
+width: 100%;
+height: 300%;
+overflow: hidden;
+transform: translate(-50%, -50%);
+
+}
+
+#notredame img
+{
+
+width: 100%;
+height: 100%;
+transform: translate(-50%, -40%);
+
+}
+
+#fortpo h3 
+{
+
+background-color: white;
+
+}
+
+#notredame h3, #parcnational h3
+{
+
+font-size: 18px;
+position: relative;
+bottom: -2px;
+}
+
+#parcnational img
+{
+
+transform: translate(-40%, -90%)
+
+}
+
+
+
+
+
+/*Pied de page */
+
+
+footer
+{
+background-color: #F2F2F2;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding-top: 20px;
+
+}
+
+#apropos , #NosHebergements , #assistance
+{
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: flex-start;
+
+}
+
+footer ul li
+{
+
+list-style: none;
+
+}
+
+footer ul li a
+{
+
+text-decoration: none;
+color: black;
+position: relative;
+justify-content: left;
+}
+
+
+footer ul
+{
+
+position: relative;
+right: 40px;
+
+}
+
+
+#apropos ul li
+{
+position: relative;
+top: -5px;
+margin: 0px 0px 10px 0px;
+
+}
+
+
+#NosHebergements ul li
+{
+
+position: relative;
+top: -30px;
+margin: 0px 0px 10px 0px;
+
+}
+
+
+
+
+#assistance ul li
+{
+
+position: relative;
+top: -30px;
+margin:  10px 0px 0px 0px;
+
+}
+
+#apropos
+{
+
+
+	position: relative;
+		top: 15px;
+}
+
+
+#NosHebergements, #assistance
+{
+
+
+	position: relative;
+	top: 7px;
+
+
+
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* réalisation sur tous type de page, avec minimum 768 px et maximum 992px (réalisation sur tablette) */
+
+@media screen and (min-width:  768px) and (max-width: 992px)
+{
+
+header 
+{
+
+display: flex;
+justify-content: space-between;
+
+
+}
+
+header ul
+
+{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+
+}
+
+#Logo
+{
+
+	padding-left: 30px;
+	padding-top: 10px;
+
+}
+
+
+header ul li
+{
+	text-decoration-style: none;
+	margin: 21px 20px 30px 20px;
+
+}
+
+header ul li a 
+
+{
+
+	text-decoration: none;
+	color: black;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 43px;
+
+}
+
+header ul li a:hover
+
+{
+
+border-top: solid blue ;
+color: blue;
+
+
+}
+/* réalisation du navigateur de recherche */
+
+section h1
+{
+
+ font-size: 26px;
+ font-weight: bold;
+}
+
+
+section h2
+
+{
+
+font-size: 20px;
+color: grey;
+}
+
+
+
+#logolocation
+{
+	
+	position: relative;
+	background-color: #F2F2F2;
+	border: 3px rgba(0, 0, 0, 1.0) ;
+	border-radius: 10px;
+	padding: 10px 20px 10px 10px;
+	margin: 0px 0px 0px 0px;
+	z-index: 20;
+	left: 10px;
+
+
+}
+
+#zonerecherche
+{
+
+position: relative;
+left: 20px;
+
+}
+
+
+
+
+
+
+#rechercherbleu
+{
+	position: relative;
+	text-decoration: none;
+	color: white;
+	background-color: #0065FC;
+	border: 3px rgba(0, 0, 0, 0.0);
+	border-radius: 10px;
+	padding: 8px 10px 8px 20px;
+	right: 25px;
+	z-index: 20;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+
+#rechercherbleu:hover
+{
+	text-decoration: none;
+	color: white;
+	background-color: #0075Fb;
+	border: 3px rgba(0, 0, 0, 0.0);
+	border-radius: 10px;
+	z-index: 20;
+	font-weight: bold;
+}
+
+
+section form input
+{
+	position: relative;
+	background-color: white;
+	text-decoration: none;
+	padding: 12px 15px 10px 10px;
+	border: rgba(0, 0, 0, 0.0);
+	z-index: 100;
+	visibility: visible;
+	font-weight: bold;
+
+}
+
+#loupe
+{
+
+visibility: hidden;
+
+}
+
+/*Nous allons réaliser l'espace filtre */
+
+
+#espacefiltre
+{
+position: relative;
+left: 40px;
+display: flex;
+flex-direction: row;	
+
+}
+
+#listfiltre
+{
+
+display: flex;
+flex-direction: row;
+text-decoration: none;
+list-style-type: none;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+
+#listfiltre ul
+{
+
+display: flex;
+justify-content: space-around;
+
+}
+
+
+
+#listfiltre li
+{
+
+text-decoration: none;
+background-color: white;
+border: 2px solid rgba(242, 242, 242, 1.0);
+border-radius: 50px;
+padding: 0px 15px 0px 0px;
+margin: 0px 20px 10px 15px;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+
+}
+
+
+#économie, #Familial, #romantique, #Animaux
+{
+
+background-color: #DEEBFF;
+color: #0065FC;
+border: rgba(0, 0, 0, 0.0);
+border-radius: 50px;
+padding: 15px 15px 15px 15px;
+margin: 0px 10px 0px 0px;
+
+}
+
+#Familial
+{
+
+padding: 15px 17px 15px 17px;
+
+}
+
+
+
+#listfiltre a
+{
+display: flex;
+
+text-decoration: none;
+color: black;
+font-weight: bold;
+background-color: white;
+align-items: center;
+justify-content: space-around;
+}
+
+
+#infosup
+{
+position: relative;
+left: 40px;
+bottom: 10px;
+}
+
+
+
+#info
+{
+
+color: #0065FC ;
+border: 2px solid rgba(242, 242, 242, 1.0);
+border-radius: 500px;
+padding: 3px 7px 3px 7px;
+background-color: white;
+position: relative;
+}
+
+#plusde500
+{
+
+color: grey;
+position: relative;
+
+
+}
+
+
+
+/* test hebergement et pop */
+
+#deuxiemesec
+{
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+#hebergementmars
+{
+overflow: visible;
+background-color: #F2F2F2 ;
+border-radius: 30px;
+padding: 0px 0px 0px 0px ;
+width: 65%;
+height: 70%;
+position: relative;
+left: 0%;
+
+}
+
+#titreheber
+{
+	font-size: 20px;
+	position: relative;
+	top: 20px;
+	left: 10%;
+}
+
+
+#hebermarscard
+{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+overflow: visible;
+justify-content: center;
+}
+
+.card {
+  width: 35%; 
+  height: 270px;
+  margin: 30px 20px 20px 20px ; 
+  background-color: white; 
+  box-shadow: 0px 5px 20px #999; 
+  border-radius: 30px;
+  overflow: visible;
+
+
+}
+.card a { 
+  color: #333; 
+  text-decoration: none;
+ 
+}
+
+
+.card-image {
+  height: 170px;
+  position: relative;
+  overflow: hidden;  
+  padding: 10px 10px 10px 10px ;
+  border: 7px solid white;
+  border-radius: 30px ;
+  z-index: 10;
+
+
+}
+.card-image img {
+  width: 150%;
+  position: relative;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  margin: 10px 10px 10px 0px;
+  padding: 30px 30px 30px 30px;
+  border: 0px solid white;
+  border-radius: 10px ;
+
+}
+
+.card-date
+{
+	margin: 0px -20px 0px -20px;
+	font-size: 20px;
+	font-weight: 900;
+	position: relative;
+	bottom: 100px;
+	left: 10px;
+
+	padding: 0px 5px 0px 12px;
+
+	overflow: visible;
+	z-index: 20;
+
+
+}
+
+.card-title
+{
+	margin: -45px -13px 0px -14px;
+	font-size: 10px;
+		position: relative;
+	bottom: 120px;
+	font-weight: normal;
+	background-color: white;
+	padding: 35px 20px 0px 16px ;
+	z-index: 10;
+
+}
+
+.card-excerpt
+{
+
+	position: relative;
+	bottom: 120px;
+
+}
+
+
+.card-date, .card-title , .card-excerpt{
+  text-align:left ;
+
+ 
+
+}
+
+.card-body {
+  position: relative;
+  text-align:center;  
+  padding: 30px 20px 0px 20px;
+  z-index: 30;
+  overflow: visible;
+}
+
+.etoilegrise
+{
+
+	color: grey;
+
+}
+
+.etoilebleu
+{
+
+color: #0065FC;
+
+}
+
+#afficherplus
+{
+
+	margin: -15px 350px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	overflow: visible;
+	z-index: 500;
+}
+
+#afficherplus a
+{
+
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+
+}
+
+
+#hotelsoleil h5
+{
+
+font-size: 15px;
+
+}
+
+
+#aubergepanier img
+{
+width: 380%;	
+height: 190%;
+position: relative;
+top: 20%;
+
+}
+
+
+
+#aubergepanier h5
+{
+
+font-size: 16px;
+position: relative;
+left: -5px;
+
+}
+
+#hotelamina h5
+{
+
+position: relative;
+left: -5px;
+
+}
+
+strong
+{
+
+font-weight: bold;
+
+}
+
+
+
+/* test POP */
+
+#pop
+{
+display: flex;
+flex-direction: column;
+background-color: #F2F2F2 ;
+border: 1px solid rgba(0, 0, 0, 0.0);
+border-radius: 30px;
+padding: 0px 20px 0px 0px ;
+position: relative;
+left: 30px;
+width: 25%;
+flex-wrap: wrap;
+}
+
+#pop i
+{
+
+visibility: visible;
+
+}
+
+
+#titrepop
+{
+
+	font-size: 17px;
+	position: relative;
+	top: 20px;
+	left: 30px;
+
+}
+
+.cardpop {
+
+
+  width: 200px; 
+  height: 250px;
+  margin: 12px 5px 20px 20px ; 
+  background-color: white; /
+  box-shadow: 10px 5px 20px #999; 
+  border-radius: 30px;*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+
+.cardpop a { /*5*/
+  color: #333; 
+  text-decoration: none;
+
+}
+
+
+.cardpop-image {
+  height: 130px;
+  position: relative;
+  overflow: hidden;  
+
+  border: 5px solid white;
+  border-radius: 30px  30px 0px 0px;
+
+
+}
+.cardpop-image img {
+  width: 120%;
+  height: 100;
+  position: absolute;
+
+  transform: translate( -20%, -20%);
+	margin: 10px 10px 10px 0px;
+  padding: 10px 10px 10px 10px;
+  border: 0px  solid white;
+  border-radius: 10px 0px 0px 0px ;
+  object-fit: contain;
+}
+
+
+
+
+.cardpop-date
+{
+	margin: 0px 0px 0px 0px;
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	bottom: 40px;
+
+
+
+
+
+
+
+}
+
+.cardpop-title
+{
+	margin: 0px 0px 0px 0px;
+	font-size: 8px;
+	position: relative;
+	bottom: 60px;
+
+
+}
+
+.cardpop-excerpt
+{
+
+position: relative;
+bottom: 60px;
+
+}
+
+
+.cardpop-date, .cardpop-title , .cardpop-excerpt
+{
+  text-align:left ;
+  font-weight: bold;
+
+}
+
+.cardpop-body {
+   text-align:center;  
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+
+#pophotel
+{
+position: relative;
+transform: translate(-10% -90%);
+
+}
+
+#hotelbleublanc img
+{
+width: 180%;
+height: 250%;
+transform: translate(-25%, -35%);
+
+}
+
+
+/* test */
+
+
+#troisiemesection
+{
+margin: 0px 0px 60px 0px;
+
+
+}
+
+#touteslescolomnes
+{display: flex;
+flex-direction: row;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.cardactivite 
+{
+  width: 300px;
+  height: 450px; /*1*/
+  margin: 0px auto; /*2*/
+  background-color: white; /*3*/
+  box-shadow: 0px 5px 20px #999; /*4*/
+  border-radius: 30px;
+  position: relative;
+  top: 5px;
+}
+
+
+.cardactivite a 
+
+{
+  color: #333; 
+  text-decoration: none;
+}
+.cardactivite:hover .card-image img 
+
+{
+  width: 160%;
+}
+
+.cardactivite-image 
+
+{
+  height: 88%;/*1*/
+  position: relative;/*2*/
+  overflow: hidden;/*3*/
+  border-radius: 30px 30px 0px 0px ;
+}
+
+
+
+.cardactivite-image img 
+
+{
+  width: 250%;/*4*/
+  height: 130%;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-70%, -70%);
+
+}
+
+.cardactivite-body {
+    text-align:center;  /*1*/
+  padding: 15px 20px; /*2*/
+  box-sizing: border-box; /*3*/
+}
+
+.cardactivite-date {
+ 
+  text-align:left;
+  text-transform:uppercase;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  bottom: 20px;
+}
+
+
+
+/* pour les petites colomne */
+
+
+.cardactivitev2 
+
+{
+  width: 300px;
+  height: 220px; /*1*/
+  margin: 0px 0px 20px 0px; /*2*/
+  background-color: white; /*3*/
+  box-shadow: 0px 5px 20px #999; /*4*/
+  border-radius: 30px;
+}
+
+
+
+.cardactivitev2 a 
+
+{ /*5*/
+  color: #333; 
+  text-decoration: none;
+}
+
+
+.cardactivitev2-image 
+
+{
+  height: 230px;/*1*/
+  position: relative;/*2*/
+  overflow: hidden;/*3*/
+  border-radius: 30px 30px 0px 0px ;
+}
+
+
+.cardactivitev2-image img 
+
+{
+  width: 100%;
+  height: 190px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+
+}
+
+
+
+.cardactivitev2-body 
+
+{
+    text-align:center;  /*1*/
+  padding: 15px 20px; /*2*/
+  box-sizing: border-box; /*3*/
+}
+
+
+
+.cardactivitev2-date 
+
+{
+ 
+  text-align:left;
+  text-transform:uppercase;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  bottom: 82px;
+}
+
+
+/*individuelement */
+
+
+
+#titreactivite
+
+{
+
+font-size: 20px;
+text-align: center;
+margin: 80px 0px 50px 0px;
+
+}
+
+
+
+#fortpo h3
+
+{
+
+position: relative;
+top: 65px;
+
+}
+
+
+
+
+#fortpoimg
+
+{
+
+height: 75%;
+
+}
+
+
+#fortpoimg img{
+
+width: 100%;
+height: 300%;
+overflow: hidden;
+transform: translate(-50%, -50%);
+
+}
+
+#notredame img
+
+{
+
+width: 100%;
+height: 80%;
+transform: translate(-50%, -60%);
+
+}
+
+
+
+
+
+#notredame h3, #parcnational h3
+
+{
+
+font-size: 18px;
+position: relative;
+bottom: -2px;
+}
+
+#parcnational img
+
+{
+
+transform: translate(-40%, -90%)
+
+}
+
+/*Pied de page */
+
+
+footer
+{
+background-color: #F2F2F2;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding-top: 20px;
+
+}
+
+#apropos , #NosHebergements , #assistance
+{
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: flex-start;
+
+}
+
+footer ul li
+{
+
+list-style: none;
+
+}
+
+footer ul li a
+{
+
+text-decoration: none;
+color: black;
+position: relative;
+justify-content: left;
+
+}
+
+
+footer ul
+{
+
+position: relative;
+right: 40px;
+
+}
+
+
+#apropos ul li
+{
+position: relative;
+top: -5px;
+margin: 0px 0px 10px 0px;
+
+}
+
+
+#NosHebergements ul li
+{
+
+position: relative;
+top: -30px;
+margin: 0px 0px 10px 0px;
+
+}
+
+
+
+
+#assistance ul li
+{
+
+position: relative;
+top: -30px;
+
+}
+
+#apropos
+{
+
+
+	position: relative;
+		top: 15px;
+}
+
+
+#NosHebergements, #assistance
+{
+
+
+	position: relative;
+	top: 7px;
+
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Réalisation sur tous type de page avec maximum de 768px (réalisation sur Tél) */
+
+@media screen and (max-width: 768px)
+{
+
+body
+{
+overflow-y: visible;
+}
+
+
+header 
+{
+
+display: flex;
+flex-direction: column;
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+overflow: visible;
+
+}
+
+header ul
+
+{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+    justify-content: ;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	flex-wrap: nowrap;
+
+
+}
+
+#Logo
+{
+display: flex;
+justify-content: center;
+padding-left: 15%;
+
+}
+
+
+header ul li
+{
+	text-decoration-style: none;
+	margin: 0px 0px 0px 0px;
+
+
+}
+
+#hebergement
+{
+	position: absolute;
+	text-decoration: none;
+	color: black;
+
+	margin: 10px 0px 0px 0px;
+	border-bottom: solid grey ;
+
+	max-width: 80%;
+	padding: 10px 10% 20px 20%;
+	left: 0px;
+}
+
+#activité
+
+
+{
+	position: absolute;
+	text-decoration: none;
+	color: black;
+
+	margin: 10px 0px 0px 0px;
+	border-bottom: solid grey ;
+
+	max-width: 80%;
+	padding: 10px 20% 20px 20%;
+	right: -10px;
+}
+
+#activité:hover , #hebergement:hover
+
+{
+
+border-bottom: solid #0065FC ;
+color: #0065FC;
+padding-left:  ;
+padding-right: ;
+z-index: 500;
+}
+
+
+/* réalisation du navigateur de recherche */
+
+#premiersec
+{
+position: relative;
+top: 70px;
+
+
+}
+
+section h1
+{
+
+ font-size: 26px;
+ font-weight: bold;
+ text-align: center;
+}
+
+
+section h2
+
+{
+
+font-size: 19px;
+color: grey;
+position: relative;
+left: 5px;
+}
+
+
+
+#logolocation
+{
+	
+	position: relative;
+	background-color: #F2F2F2;
+	border: 3px rgba(0, 0, 0, 1.0) ;
+	border-radius: 10px;
+	padding: 15px 20px 15px 15px;
+	margin: 0px 0px 0px 0px;
+	z-index: 20;
+	left: 10px;
+
+
+}
+
+#zonerecherche
+{
+
+position: relative;
+left: 50px;
+top: 20px;
+}
+
+
+
+
+
+
+#rechercherbleu:hover
+{
+	position: relative;
+	text-decoration: none;
+	color: white;
+	background-color: #0065FC;
+	border: 3px rgba(0, 0, 0, 0.0);
+	border-radius: 10px;
+	padding: 10px 10px 10px 20px;
+	right: 25px;
+	z-index: 20;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+
+#rechercherbleu
+{
+	visibility: hidden;
+	text-decoration: none;
+	color: white;
+	background-color: #0075Fb;
+	border: 3px rgba(0, 0, 0, 0.0);
+	border-radius: 10px;
+	z-index: 20;
+	font-weight: bold;
+}
+
+
+section form input
+{
+	position: relative;
+	background-color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 15px;
+	border: 3px rgba(242, 242, 242, 1.0);
+	z-index: 100;
+	visibility: visible;
+	font-weight: bold;
+
+}
+
+#loupe
+{
+position: absolute;
+
+left: 250px;
+background-color: #0075Fb;
+	border: 3px rgba(242, 242, 242, 0.0);
+	border-radius: 10px;
+	z-index: 200;
+	font-weight: bold;
+	padding: 15px 15px 15px 15px;
+color: white;
+
+}
+
+
+#espacefiltre
+{
+position: relative;
+top: 110px;
+left: 0px;
+display: flex;
+flex-direction: column;	
+
+}
+
+#listfiltre
+{
+position: relative;
+top: -10px;
+display: flex;
+flex-direction: row;
+text-decoration: none;
+list-style-type: none;
+flex-wrap: wrap ;
+}
+
+#listfiltre ul
+{
+
+display: flex;
+justify-content: space-around;
+
+}
+
+
+
+#listfiltre li
+{
+
+text-decoration: none;
+background-color: white;
+border: 1px solid rgba(242, 242, 242, 1.0);
+border-radius: 50px;
+padding: 0px 15px 0px 0px;
+margin: 0px 15px 0px 15px;
+
+}
+
+
+#économie, #Familial, #romantique, #Animaux
+{
+
+background-color: #DEEBFF;
+color: #0065FC;
+border: rgba(0, 0, 0, 0.0);
+border-radius: 50px;
+padding: 15px 15px 15px 15px;
+
+}
+
+
+
+#listfiltre a
+{
+
+text-decoration: none;
+color: black;
+font-weight: bold;
+background-color: white;
+}
+
+
+/*Nous allons réaliser mtn le petit info */
+
+#infosup
+{
+position: relative;
+top: 110px;
+left: 40px;
+margin: 0px 0px 20px 0px;
+}
+
+
+
+#info
+{
+
+color: #0065FC ;
+border: 1px solid rgba(242, 242, 242, 1.0);
+border-radius: 500px;
+padding: 3px 7px 3px 7px;
+background-color: white;
+
+}
+
+#plusde500
+{
+
+font-size: 10px;
+color: black;
+
+}
+
+
+
+
+/* test hebergement et pop */
+
+#deuxiemesec
+{
+position: relative;
+top: 80px;
+display: flex;
+flex-direction: column-reverse;
+justify-content: center;
+align-items: center;
+}
+
+#hebergementmars
+{
+overflow: visible;
+background-color: #F2F2F2 ;
+border-radius: 30px;
+padding: 0px 0px 0px 0px ;
+width: 90%;
+height: 70%;
+position: relative;
+left: 3%;
+margin: 50px 0px 0px 0px;
+
+}
+
+#titreheber
+{
+	font-size: 20px;
+	position: relative;
+	top: 20px;
+	left: 10%;
+}
+
+
+#hebermarscard
+{
+display: flex;
+flex-direction: colomne;
+flex-wrap: wrap;
+
+justify-content: center;
+
+}
+
+.card {
+  width: 100%;
+  max-width: 100%;
+  height: 270px;
+  margin: 30px 20% 20px 20% ; 
+  background-color: white; 
+  box-shadow: 0px 5px 20px #999; 
+  border-radius: 30px;
+
+
+}
+.card a { 
+  color: #333; 
+  text-decoration: none;
+ 
+}
+
+
+.card-image {
+  height: 170px;
+  position: relative;
+  overflow: hidden;  
+  padding: 10px 10px 10px 10px ;
+  border: 7px solid white;
+  border-radius: 30px ;
+  z-index: 10;
+  width:auto;
+
+  ;
+
+
+}
+.card-image img {
+  width: 150%;
+  position: relative;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  margin: 10 auto 10px auto;
+  padding: 30px 30px 30px 30px;
+  border: 0px solid white;
+  border-radius: 10px ;
+
+
+}
+
+.card-date
+{
+	margin: 0px -20px 0px -20px;
+	font-size: 20px;
+	font-weight: 900;
+	position: relative;
+	bottom: 100px;
+	left: 10px;
+
+	padding: 0px 5px 0px 12px;
+
+	overflow: visible;
+	z-index: 20;
+
+
+}
+
+.card-title
+{
+	margin: -45px -13px 0px -14px;
+	font-size: 10px;
+		position: relative;
+	bottom: 120px;
+	font-weight: normal;
+	background-color: white;
+	padding: 35px 20px 0px 16px ;
+	z-index: 10;
+
+}
+
+.card-excerpt
+{
+
+	position: relative;
+	bottom: 120px;
+
+}
+
+
+.card-date, .card-title , .card-excerpt
+{
+  text-align:left ;
+
+ 
+
+}
+
+.card-body {
+  position: relative;
+  text-align:center;  
+  padding: 30px 20px 0px 20px;
+  z-index: 30;
+  overflow: visible;
+}
+
+.etoilegrise
+{
+
+	color: grey;
+
+}
+
+.etoilebleu
+{
+
+color: #0065FC;
+
+}
+
+#afficherplus
+{
+
+	margin: -15px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	overflow: visible;
+	z-index: 500;
+}
+
+#afficherplus a
+{
+
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+
+}
+
+
+#hotelsoleil h5
+{
+
+font-size: 15px;
+
+}
+
+
+#aubergepanier img
+{
+width: 380%;	
+height: 190%;
+position: relative;
+top: 20%;
+
+}
+
+
+
+#aubergepanier h5
+{
+
+font-size: 16px;
+position: relative;
+left: -5px;
+
+}
+
+#hotelamina h5
+{
+
+position: relative;
+left: -5px;
+
+}
+
+
+
+
+#hotelmer img
+{
+width: 110%;
+transform: translate(-50%, -55%);
+height: 180%;
+
+}
+
+#hotelamina img
+{
+width: 110%;
+transform: translate(-50%, -55%);
+height: 200%;
+}
+
+
+#aubergepanier img
+{
+
+width: 110%;
+transform: translate(-50%, -40%);
+height: 100%;
+
+
+}
+
+
+#hotelport img
+{
+
+width: 130%;
+transform: translate(-50%, -60%);
+height: 100%;
+
+
+}
+
+
+#hotelmouettes img
+{
+
+width: 110%;
+transform: translate(-50%, -55%);
+height: 120%;
+
+
+}
+
+strong
+{
+
+font-weight: bold;
+
+}
+
+
+
+/* test POP */
+
+#pop
+{
+display: flex;
+flex-direction: column;
+background-color: #F2F2F2 ;
+border: 1px solid rgba(0, 0, 0, 0.0);
+border-radius: 30px;
+padding: 0px 20px 0px 0px ;
+position: relative;
+left: 10px;
+width: 85%;
+flex-wrap: wrap;
+position: relative;
+align-items: center;
+top: 30px;
+}
+
+#pop i
+{
+
+visibility: visible;
+
+}
+
+
+#titrepop
+{
+
+	font-size: 17px;
+	position: relative;
+	text-align: center;
+	top: 20px;
+	
+}
+
+.cardpop {
+
+
+  width: 300px; 
+  height: 130px;
+  margin: 12px 5px 20px 20px ; 
+  background-color: white; /
+  box-shadow: 10px 5px 20px #999; 
+  border-radius: 20px;*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+
+}
+
+
+.cardpop a { /*5*/
+  color: #333; 
+  text-decoration: none;
+
+}
+
+
+.cardpop-image {
+ 	width: 170px;
+  height: 120px;
+  position: relative;
+  overflow: hidden;  
+
+  border: 5px solid white;
+  border-radius: 15px  15px 15px 15px;
+
+
+}
+.cardpop-image img {
+  width: 130%;
+  height: 110%;
+  position: absolute;
+  top: 50%;
+  left: -15%;
+  transform: translate(-30%, -55%);
+	margin: 10px 10px 10px 0px;
+  padding: 10px 10px 10px 10px;
+  border: 0px  solid white;
+  border-radius: 10px 0px 0px 0px ;
+  object-fit: contain;
+}
+
+
+
+
+.cardpop-date
+{
+	margin: 0px 0px 0px 0px;
+	font-size: 15px;
+	font-weight: bold;
+position: relative;
+bottom: 165px;
+left: 110px;
+z-index: 500;
+
+
+
+
+
+
+}
+
+.cardpop-title
+{
+	margin: 0px 0px 0px 0px;
+	font-size: 8px;
+	position: relative;
+	bottom: 180px;
+left: 110px;
+
+}
+
+.cardpop-excerpt
+{
+
+position: relative;
+bottom: 130px;
+left: 120px;
+
+}
+
+
+.cardpop-date, .cardpop-title , .cardpop-excerpt{
+  text-align:left ;
+  font-weight: bold;
+
+}
+
+.cardpop-body {
+   text-align:center;  
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+
+#aucoeur img
+{
+
+transform: translate(-25%, -60%);
+
+}
+
+
+#hotelbleublanc img
+{
+
+width: 110% ;
+height: 190%;
+transform: translate(-15%, -55%);
+
+}
+
+
+/* test */
+
+
+#troisiemesection
+{
+margin: 0px 0px 60px 0px;
+position: relative;
+top: 140px;
+
+
+
+}
+
+
+
+#titreactivite
+{
+
+text-align: center;
+font-size: 20px;
+
+}
+
+#touteslescolomnes
+{
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+flex-wrap: wrap;
+align-items: center;
+
+}
+
+.cardactivite {
+  width: 300px;
+  height: 450px; /*1*/
+  margin: 0px auto; /*2*/
+  background-color: white; /*3*/
+  box-shadow: 0px 5px 20px #999; /*4*/
+  border-radius: 30px;
+  position: relative;
+  top: 5px;
+}
+.cardactivite a { /*5*/
+  color: #333; 
+  text-decoration: none;
+}
+.cardactivite:hover .card-image img { 
+  width: 160%;
+
+}
+
+.cardactivite-image {
+  height: 88%;/*1*/
+  position: relative;/*2*/
+  overflow: hidden;/*3*/
+  border-radius: 30px 30px 0px 0px ;
+}
+.cardactivite-image img {
+  width: 250%;/*4*/
+  height: 130%;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-70%, -70%);
+
+}
+
+.cardactivite-body {
+    text-align:center;  /*1*/
+  padding: 15px 20px; /*2*/
+  box-sizing: border-box; /*3*/
+}
+
+.cardactivite-date {
+ 
+  text-align:left;
+  text-transform:uppercase;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  bottom: 20px;
+}
+
+
+
+/* pour les petites colomne */
+
+
+.cardactivitev2 {
+  width: 300px;
+  height: 220px; /*1*/
+  margin: 20px 0px 20px 0px; /*2*/
+  background-color: white; /*3*/
+  box-shadow: 0px 5px 20px #999; /*4*/
+  border-radius: 30px;
+}
+.cardactivitev2 a { /*5*/
+  color: #333; 
+  text-decoration: none;
+}
+
+
+.cardactivitev2-image {
+  height: 230px;/*1*/
+  position: relative;/*2*/
+  overflow: hidden;/*3*/
+  border-radius: 30px 30px 0px 0px ;
+}
+.cardactivitev2-image img {
+  width: 100%;
+  height: 190px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+
+}
+
+.cardactivitev2-body {
+    text-align:center;  /*1*/
+  padding: 15px 20px; /*2*/
+  box-sizing: border-box; /*3*/
+}
+
+.cardactivitev2-date {
+ 
+  text-align:left;
+  text-transform:uppercase;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  bottom: 82px;
+}
+
+
+/*individuelement */
+
+
+#fortpoimg
+{
+
+height: 75%;
+
+}
+
+
+#fortpoimg img{
+
+width: 100%;
+height: 300%;
+overflow: hidden;
+transform: translate(-50%, -50%);
+
+}
+
+#fortpo h3 
+{
+
+position: relative;
+top: 60px;
+}
+
+#notredame h3, #parcnational h3
+{
+
+font-size: 15px;
+position: relative;
+bottom: -7px;
+}
+
+#parcnational img
+{
+
+transform: translate(-40%, -90%)
+
+}
+
+/*Pied de page */
+
+
+footer
+{
+background-color: #F2F2F2;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+padding-top: 20px;
+padding-left: 20px;
+position: relative;
+top: 100px;
+overflow: visible;
+visibility: visible;
+z-index: 500;
+
+}
+
+#apropos , #NosHebergements , #assistance
+{
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: flex-start;
+
+}
+
+footer ul li
+{
+
+list-style: none;
+
+}
+
+footer ul li a
+{
+
+text-decoration: none;
+color: black;
+position: relative;
+justify-content: left;
+}
+
+
+footer ul
+{
+
+position: relative;
+right: 40px;
+
+}
+
+
+#apropos ul li
+{
+position: relative;
+top: -15px;
+margin: 0px 0px 5px 0px;
+
+}
+
+
+#NosHebergements ul li
+{
+
+position: relative;
+top: -15px;
+margin: 0px 0px 5px 0px;
+
+}
+
+
+
+
+#assistance ul li
+{
+
+position: relative;
+top: -25px;
+
+}
+
+#apropos
+{
+
+
+	position: relative;
+		top: 15px;
+}
+
+
+#NosHebergements, #assistance
+{
+
+
+	position: relative;
+	top: 7px;
+
+
+
+}
+
+
+
+}
