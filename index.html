@@ -18,8 +18,8 @@
 	</head>
 	
 	<body>
-		<header>
-			<div id="Logo"><img src="images/logo/Booki.png"></div>
+		<header class= "dimensionpage">
+			<div id= "logo"><img src="images/logo/Booki.png"></div>
 			<nav id="navigateur">
 				<ul>
 					<li><a id="hebergement" href="#hebergementmars">Hébergements</a></li>
@@ -30,7 +30,7 @@
 		</header>
 		
 
-		<section id="premiersec">
+	<section id="premiersection" class="dimensionpage">
 
 				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 
@@ -40,16 +40,18 @@
 				<form method="post" action="#">
 					<p><i id= "logolocation" class= "fa-solid fa-location-dot"></i>
 						<input type="text" name="recherche" placeholder="Marseille, France">
-						<a id="rechercherbleu" href="#">Rechercher</a>
-						<a id= "loupe" href="#"><i class="fa-solid fa-magnifying-glass"></a></i>
+						<input type="submit" value="Rechercher" id="rechercherbleu">
+						<button type="submit" id= "loupe">
+    						<i class="fa fa-search"></i> Submit
+						</button>
 					</p>
 				</form>
 			</div>
 		
-		</section>
+	
 		
 		<section id= "espacefiltre">
-				<h1>Filtres</h1>
+				<h2>Filtres</h2>
 				
 				<ul id= "listfiltre">
 					<li><a href="#"><i id= "économie" class="fa-solid fa-money-bill-wave"></i> Economique</a> </li>
@@ -63,6 +65,7 @@
 		<div id= "infosup"><p id="plusde500"><i id= "info" class="fa-solid fa-info"></i> Plus de 500 logements sont disponible dans cette ville</p></div>
 
 
+	</section>
 
 
 
@@ -80,276 +83,295 @@
 
 
 
-
-	<main>
-		<section id= "deuxiemesec">
+	<main class="dimensionpage">
+		
+	<section id= "deuxiemesec">
 			
-			<article id= "hebergementmars">
-				<h3 id= "titreheber">Hébergements à Marseille</h3>
+		<article id= "hebergementmars">
+				
+			<h2 id= "titreheber">Hébergements à Marseille</h2>
 			
 			<div id= "hebermarscard">
 
 				<!-- Auberge La cannebière--> 
 				<div class= "card">
-  					  <a href="#">
+  					
         	
-        		<div class="card-image"><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Orange" /></div>
+        				<div class="card-image"><a href="#"><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Orange" /></a></div>
      
-        		<div class="card-body">
+        					<div class="card-body">
 
        
-            		<div class="card-date">
-                	<h5>Auberge La Cannebière</h5>
-            		</div>
+            				<div class="card-date">
+                				<a href="#"><h5>Auberge La Cannebière</h5></a>
+            				</div>
 
       
-            		<div class="card-title">
-                	<h3>Nuit à partir de <strong>25€</strong></h3>
-           		 	</div>
+            				<div class="card-title">
+                				<p>Nuit à partir de <strong>25€</strong></p>
+           		 			</div>
    
-           			<div class ="card-excerpt">
-                	<i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilegrise"></i>
-           			</div>
+           					<div class ="card-excerpt">
+                				<i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , 	etoilebleu"></i> <i class="fa-solid fa-star , etoilegrise"></i>
+           					</div>
 
-        		</div>
+        				</div>
      
-    </a>
-</div>
+   				
+				</div>
 
 				<!-- Hotel du port--> 
 				<div class= "card">
   					  <a href="#">
         	
-        		<div id="hotelport" class="card-image"><img src="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Orange" /></div>
+        				<div id="hotelport" class="card-image"><img src="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Orange" /></div>
      
-        		<div class="card-body">
+        				<div class="card-body">
 
        
-            		<div class="card-date">
-                	<h5>Hôtel du port</h5>
-            	</div>
+            				<div class="card-date">
+                				<h5>Hôtel du port</h5>
+            				</div>
 
       
-            	<div class="card-title">
-                <h3>Nuit à partir de 52<strong>€</strong></h3>
-            </div>
+            				<div class="card-title">
+               					<p>Nuit à partir de 52<strong>€</strong></p>
+            				</div>
    
-            <div class ="card-excerpt">
-                <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i>
-            </div>
+           					<div class ="card-excerpt">
+           	    				<i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i>
+           					 </div>
 
-        </div>
+        				</div>
      
-    </a>
-</div>
+   					 </a>
+				</div>
 
 
 				<!-- Hôtel Le soleil du matin--> 
+				
 				<div  class= "card">
-  					  <a href="#">
+  					<a href="#">
         	
-        		<div id= "hotelmouettes" class="card-image"><img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Orange" /></div>
+        				<div id= "hotelmouettes" class="card-image"><img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Orange" /></div>
      
-        		<div class="card-body">
+        				<div class="card-body">
 
        
-            		<div class="card-date">
-                	<h5>Hôtel Les mouettes</h5>
-            	</div>
+            				<div class="card-date">
+                				<h5>Hôtel Les mouettes</h5>
+            				</div>
 
       
-            	<div class="card-title">
-                <h3>Nuit à partir de 76<strong>€</strong></h3>
-            </div>
+            				<div class="card-title">
+               					<p>Nuit à partir de 76<strong>€</strong></p>
+            				</div>
    
-            <div class ="card-excerpt">
-                <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilegrise "></i>
-            </div>
+            				<div class ="card-excerpt">
+               					 <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilegrise "></i>
+           		 			</div>
 
-        </div>
+       		 			</div>
      
-    </a>
-</div>
+    				</a>
+				</div>
+
 
 
 				<!-- Hôtel de la mer--> 
+
+
 				<div class= "card">
-  					  <a href="#">
+  					<a href="#">
         	
-        		<div id= "hotelmer" class="card-image"><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Orange" /></div>
+        				<div id= "hotelmer" class="card-image"><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Orange" /></div>
      
-        		<div class="card-body">
+        				<div class="card-body">
 
        
-            		<div class="card-date">
-                	<h5>Hôtel de la mer</h5>
-            	</div>
+            				<div class="card-date">
+                				<h5>Hôtel de la mer</h5>
+            				</div>
 
       
-            	<div class="card-title">
-                <h3>Nuit à partir de 46<strong>€</strong></h3>
-            </div>
+            				<div class="card-title">
+               		 			<p>Nuit à partir de 46<strong>€</strong></p>
+            				</div>
    
-            <div class ="card-excerpt">
-                <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilegrise"></i> <i class="fa-solid fa-star , etoilegrise"></i>
-            </div>
+            				<div class ="card-excerpt">
+                				<i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilegrise"></i> <i class="fa-solid fa-star , etoilegrise"></i>
+            				</div>
 
-        </div>
+        				</div>
      
-    </a>
-</div>
+    				</a>
+				</div>
+
+
 
 				<!-- Auberge Le Panier--> 
+				
+
 				<div id= "aubergepanier" class= "card">
   					  <a href="#">
         	
-        		<div class="card-image"><img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Orange" /></div>
+        				<div class="card-image"><img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Orange" /></div>
      
-        		<div class="card-body">
+        				<div class="card-body">
 
        
-            		<div class="card-date">
-                	<h5>Auberge Le Panier</h5>
-            	</div>
+            				<div class="card-date">
+                				<h5>Auberge Le Panier</h5>
+            				</div>
 
       
-            	<div class="card-title">
-                <h3>Nuit à partir de <strong>23€</strong></h3>
-            </div>
+            				<div class="card-title">
+                				<p>Nuit à partir de <strong>23€</strong></p>
+            				</div>
    
-            <div class ="card-excerpt">
-                <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilegrise"></i>
-            </div>
+            				<div class ="card-excerpt">
+                				<i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilegrise"></i>
+            				</div>
 
-        </div>
+        				</div>
      
-    </a>
-</div>
-		
+    				</a>
+				</div>
+
+
+
 				<!-- hotel chez amina--> 
+
+
+
 				<div id= "hotelamina" class= "card">
   					  <a href="#">
         	
-        		<div class="card-image"><img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Orange" /></div>
+        				<div class="card-image"><img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Orange" /></div>
      
-        		<div class="card-body">
+        				<div class="card-body">
 
        
-            		<div class="card-date">
-                	<h5>Hôtel chez Amina</h5>
-            	</div>
+            				<div class="card-date">
+                				<h5>Hôtel chez Amina</h5>
+            				</div>
 
       
-            	<div class="card-title">
-                <h3>Nuit à partir de 96<strong>€</strong></h3>
-            </div>
+            				<div class="card-title">
+                				<p>Nuit à partir de 96<strong>€</strong></p>
+            				</div>
    
-            <div class ="card-excerpt">
-                <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i>
-            </div>
+            				<div class ="card-excerpt">
+                				<i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i>
+            				</div>
 
-        </div>
+        				</div>
      
-    </a>
-</div>
-		<div id= "afficherplus">
-		<h5><a href="#">Afficher plus</a></h5>
-		</div>
-</div>
-			
-			</article>
+   		 			</a>
+				</div>
+		
+			</div>
+
+
+			<div id= "afficherplus">
+				
+				<h5><a href="#">Afficher plus</a></h5>
+			</div>	
+
+		</article>
 			
 
-			<aside id="pop">
-				<div id="titrepop"><h3>Les plus populaires</h3><i class="fa-solid fa-chart-line"></i></div>
+		<aside id= "pop">
 
-				<!-- Pop: Hôtel Le soleil du matin--> 
-				<div   class= "cardpop">
-  					  <a href="#">
+			<div id="entetepop"><h2 id="titrepop">Les plus populaires</h2><i class="fa-solid fa-chart-line" style="font-size: 25px;"></i></div>
+
+
+			<!-- Pop: Hôtel Le soleil du matin--> 
+
+
+			<div   class= "cardpop">
+  				<a href="#">
         	
-        		<div class="cardpop-image"><img id= "populairehotel" src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Orange" /></div>
+        			<div class="cardpop-image"><img id= "populairehotel" src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Orange" /></div>
      
-        		<div class="cardpop-body">
+        			<div class="cardpop-body">
 
        
-            		<div class="cardpop-date">
-                	<h5>Hôtel Le soleil du matin</h5>
-            	</div>
+            			<div class="cardpop-date">
+                			<h5>Hôtel Le soleil du matin</h5>
+            			</div>
 
       
-            	<div class="cardpop-title">
-                <h3>Nuit à partir de 128<strong>€</strong></h3>
-            </div>
+            			<div class="cardpop-title">
+                			<p>Nuit à partir de 128<strong>€</strong></p>
+            			</div>
    
-            <div class ="cardpop-excerpt">
-                <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i>
-            </div>
-
-        </div>
-     
-    </a>
-</div>
+            			<div class ="cardpop-excerpt">
+                			<i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i>
+            			</div>
+        			</div>
+    			</a>
+			</div>
 
 
 				<!-- Au coeur de l'eau Chambres d'hôtes--> 
-				<div class= "cardpop">
-  					  <a href="#">
+			<div class= "cardpop">
+  				<a href="#">
         	
-        		<div id= "aucoeur" class="cardpop-image"><img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Orange" /></div>
+        			<div id= "aucoeur" class="cardpop-image"><img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Orange" /></div>
      
-        		<div class="cardpop-body">
+        			<div class="cardpop-body">
 
        
-            		<div class="cardpop-date">
-                	<h5>Au coeur de l'eau <br>Chambres d'hôtes</h5>
-            	</div>
+            			<div class="cardpop-date">
+                			<h5>Au coeur de l'eau <br>Chambres d'hôtes</h5>
+            			</div>
 
       
-            	<div class="cardpop-title">
-                <h3>Nuit à partir de 71<strong>€</strong></h3>
-            </div>
+            			<div class="cardpop-title">
+                			<p>Nuit à partir de 71<strong>€</strong></p>
+            			</div>
    
-            <div class ="cardpop-excerpt">
-                <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilegrise"></i>
-            </div>
+            			<div class ="cardpop-excerpt">
+                			<i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilegrise"></i>
+            			</div>
+        			</div>
+    			</a>
+			</div>
 
-        </div>
-     
-    </a>
-</div>
+
 
 
 				<!-- Pop: Hôtel Tout bleu et Blanc--> 
-				<div class= "cardpop">
-  					  <a href="#">
+
+
+			<div class= "cardpop">
+  				<a href="#">
         	
-        		<div id= "hotelbleublanc" class="cardpop-image"><img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Orange" /></div>
+        			<div id= "hotelbleublanc" class="cardpop-image"><img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Orange" /></div>
      
-        		<div class="cardpop-body">
+        			<div class="cardpop-body">
 
        
-            		<div class="cardpop-date">
-                	<h5>Hôtel Tout bleu et Blanc</h5>
-            	</div>
+            			<div class="cardpop-date">
+                			<h5>Hôtel Tout bleu et Blanc</h5>
+            			</div>
 
       
-            	<div class="cardpop-title">
-                <h3>Nuit à partir de 68<strong>€</strong></h3>
-            </div>
+            			<div class="cardpop-title">
+                			<p>Nuit à partir de 68<strong>€</strong></p>
+            			</div>
    
-            <div class ="cardpop-excerpt">
-                <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilegrise"></i>
-            </div>
+            			<div class ="cardpop-excerpt">
+                			<i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilebleu"></i> <i class="fa-solid fa-star , etoilegrise"></i>
+            			</div>
+        			</div>
+    			</a>
+			</div>
 
-        </div>
-     
-    </a>
-</div>
+		</aside>
 
-
-			</aside>
-
-		</section>
+	</section>
 
 		
 
@@ -358,42 +380,32 @@
 		<!-----------3eme sections-------------->
 
 
-		<section id= "troisiemesection">
+	<section id= "troisiemesection">
 
-			<div>
-				<h3 id="titreactivite">Activités à Marseille</h3>
-			</div>
+		<div>
+			<h3 id="titreactivite">Activités à Marseille</h3>
+		</div>
 
 
-			<div id= "touteslescolomnes">
+		<div id= "touteslescolomnes">
 				
-
-			
 			<div id="premier colomne">	
 
-			<div id="VieuxPort" class= "cardactivite">
-   		<a href="#">
+				<div id="VieuxPort" class= "cardactivite">
+   					<a href="#">
     
-        <div class= "cardactivite-image"><img src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Orange" /></div>
-
-
+       				 	<div class= "cardactivite-image"><img src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Orange" /></div>
       
-        <div class= "cardactivite-body">
+        				<div class= "cardactivite-body">
 
           
-            <div class= "cardactivite-date">
-                <h3>Vieux Port</h3>
-            </div>
-
-          
-  
-
-        </div>
-      
-    </a>
-</div>
-
-</div>					
+           					<div class= "cardactivite-date">
+                				<h3>Vieux Port</h3>
+            				</div>
+            			</div>
+      				</a>
+				</div>
+			</div>					
 				
 
 
@@ -402,101 +414,69 @@
 
 
 
-					<div id="deuxiemecolomne">	
-
-
+			<div id= "deuxiemecolomne">	
 
 				
-			<div id= "fortpo" class= "cardactivitev2">
-   		<a href="#">
+				<div id= "fortpo" class= "cardactivitev2">
+   					<a href="#">
     
-        <div id= "fortpoimg" class= "cardactivitev2-image"><img src="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Orange" /></div>
+        				<div id= "fortpoimg" class= "cardactivitev2-image"><img src="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Orange" /></div>
 
-
-      
-        <div class= "cardactivitev2-body">
+        				<div class= "cardactivitev2-body">
 
           
-            <div class= "cardactivitev2-date">
-                <h3>fort de Pomégues</h3>
-            </div>
-
-          
-  
-
-        </div>
+            				<div class= "cardactivitev2-date">
+                				<h3>fort de Pomégues</h3>
+            				</div>
+						</div>
       
-    </a>
-</div>
+    				</a>
+				</div>
 
 
 
 
-<div  class= "cardactivitev2">
-   		<a href="#">
+				<div  class= "cardactivitev3">
+   					<a href="#">
     
-        <div class= "cardactivitev2-image"><img src="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Orange" /></div>
+        				<div class= "cardactivitev3-image"><img src="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Orange" /></div>
 
 
-      
-        <div class= "cardactivitev2-body">
-
-          
-            <div class= "cardactivitev2-date">
-                <h3>îles du Frioul</h3>
-            </div>
+      					<div class= "cardactivitev3-body">
 
           
-  
+            				<div class= "cardactivitev3-date">
+                				<h3>îles du Frioul</h3>
+            				</div>
+            			</div>
+            		</a>
+            	</div>
 
-        </div>
-      
-    </a>
-</div>
-
-
-
-
-
-</div>
+			</div>
 
 				
+			<div id="3emecolomne">	
 
 
-
-
-
-
-
-
-
-
-			
-				<div id="3emecolomne">	
-
-			<div id= "parcnational" class= "cardactivite">
-   		<a href="#">
+				<div id= "parcnational" class= "cardactivite">
+   					<a href="#">
     
-        <div class= "cardactivite-image"><img src="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Orange" /></div>
+        				<div class= "cardactivite-image"><img src="images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Orange" /></div>
 
 
       
-        <div class= "cardactivite-body">
+        				<div class= "cardactivite-body">
 
           
-            <div class= "cardactivite-date">
-                <h3>Parc National des Calanques</h3>
-            </div>
+            				<div class= "cardactivite-date">
+                				<h3>Parc National des Calanques</h3>
+            				</div>
+        				</div>
+    				</a>
+				</div>
 
-          
-  
 
-        </div>
-      
-    </a>
-</div>
-
-</div>				
+			</div>				
 
 
 
@@ -512,127 +492,91 @@
 
 
 
-<div id="4emecolomne">	
+			<div id= "colomnequatre">	
 				
-			<div id= "notredame" class= "cardactivitev2">
-   		<a href="#">
+				<div id= "notredame" class= "cardactivitev3">
+   					<a href="#">
     
-        <div class= "cardactivitev2-image"><img src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Orange" /></div>
+        				<div class= "cardactivitev3-image"><img src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Orange" /></div>
 
 
       
-        <div class= "cardactivitev2-body">
+        				<div class= "cardactivitev3-body">
 
           
-            <div class= "cardactivitev2-date">
-                <h3>Notre-Dames-de-la-Garde</h3>
-            </div>
+            				<div class= "cardactivitev3-date">
+                				<h3>Notre-Dames-de-la-Garde</h3>
+            				</div>
+						</div>
+   					</a>
+				</div>
 
-          
-  
 
-        </div>
-      
-    </a>
-</div>
-
-	<div  class= "cardactivitev2">
-   		<a href="#">
+				<div  class= "cardactivitev2">
+   					<a href="#">
     
-        <div class= "cardactivitev2-image"><img src="images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Orange" /></div>
+        				<div class= "cardactivitev2-image"><img src="images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Orange" /></div>
 
 
       
-        <div class= "cardactivitev2-body">
+        				<div class= "cardactivitev2-body">
 
           
-            <div class= "cardactivitev2-date">
-                <h3>Parc Longchamp</h3>
-            </div>
+            				<div class= "cardactivitev2-date">
+                				<h3>Parc Longchamp</h3>
+            				</div>
+        				</div>
+    				</a>
+				</div>
 
-          
-  
+			</div>
 
-        </div>
-      
-    </a>
-</div>
+		</div>
 
+	</section>
 
-
-
-
-</div>
-
-
-
-
-
-
-		
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-</div>
-
-		</section>
-
-				</main>
+</main>
             
             <!------------------ Pied de page ----------------->
 
 
-		<footer id="pieddepage">			
+		<footer>			
+			
+			<div id= "pieddepage">
 				
-				<div id= "apropos">
-					<h3>A Propos</h3>
-					<ul>
+				<div id= "pieddepagecolomne" class="dimensionpage">
+					
+					<div id= "apropos">
+						
+						<p><strong>A propos</strong></p>
+
+						
 						<li><a href="#">Fonctionnement du site</a></li>
 						<li><a href="#">Conditions générales de vente</a></li>
 						<li><a href="#">Données et Confidentialité</a></li>
-					</ul>
+					
+
+					</div>
+
+
+					<div id= "NosHebergements">
+						<p><strong>Nos hébergements</strong></p>
+					
+							<li><a href="#">Charte qualité</a></li>
+							<li><a href="#">Soumettre votre hôtel</a></li>
+				
+					</div>
+
+
+					<div id= "assistance">
+						<p><strong>Assistance</strong></p>
+					
+							<li><a href="#">Centre daide</a></li>
+							<li><a href="#">Nous contacter</a></li>
+				
+					</div>
 				</div>
-
-
-				<div id= "NosHebergements">
-					<h3>Nos hébergements</h3>
-					<ul>
-						<li><a href="#">Charte qualité</a></li>
-						<li><a href="#">Soumettre votre hôtel</a></li>
-					</ul>
-				</div>
-
-
-				<div id= "assistance">
-					<h3>Assistance</h3>
-					<ul>
-						<li><a href="#">Centre daide</a></li>
-						<li><a href="#">Nous contacter</a></li>
-					</ul>
-				</div>
+			</div>
 		</footer>
 	
 	</body>
