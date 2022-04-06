@@ -1,16 +1,18 @@
 /*Application de la police sur toute la page */
 
-body {
+body 
+{
 
-	font-family: 'Raleway' , Arial, serif;
+	font-family: Arial, serif;
 	overflow-x: hidden;
 	font-weight: normal;
 	width: 100%;
-
+	height: 100%;
 	box-sizing: border-box;
 	position: relative;
-
+	padding-bottom: 30%;
 	margin: auto;
+
 }
 
 input
@@ -22,7 +24,7 @@ font-size: 18px;
 }
 
 
-.dimensionpage ,.dimensionpageresponsive
+.dimensionpage, .dimensionpageresponsive
 {
 
 width: 95%;
@@ -41,9 +43,10 @@ min-height: 100%;
 #content-wrap
 {
 
-padding-bottom: 190px;
+padding-bottom: 500px;
 
 }
+
 
 /* réalisation de l'header version desktop */
 
@@ -76,7 +79,7 @@ header ul
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-
+  margin: auto 20px auto auto ;
 }
 
 
@@ -111,8 +114,6 @@ color: #0065FC;
 
 
 
-
-
 /* réalisation du navigateur de recherche */
 
 
@@ -125,19 +126,6 @@ justify-content: left;
 
 }
 
-#premiersection p
-{
-
-margin-top: 0px;
-
-}
-
-#premiersection h1
-{
-
-margin-bottom: 5px;
-
-}
 
 #logolocation
 {
@@ -158,7 +146,8 @@ margin-bottom: 5px;
 
 display: flex;
 flex-direction: row;
-
+align-items: center;
+justify-content: center;
 }
 
 
@@ -216,7 +205,8 @@ visibility: hidden;
 position: relative;
 display: flex;
 flex-direction: row;	
-align-items: center;
+align-items: baseline;
+margin-top: 10px;
 
 }
 
@@ -234,8 +224,9 @@ display: flex;
 flex-direction: row;
 text-decoration: none;
 list-style-type: none;
-justify-content: space-around;
 
+flex-wrap: wrap;
+margin: auto;
 
 }
 
@@ -244,6 +235,7 @@ justify-content: space-around;
 
 display: flex;
 justify-content: space-around;
+flex-wrap: wrap ;
 
 }
 
@@ -257,9 +249,10 @@ text-decoration: none;
 border: 2px solid rgba(242, 242, 242, 1.0);
 border-radius: 50px;
 padding: 0px 15px 0px 0px;
-margin: 0px 15px 0px 15px;
+margin: 0px 15px 10px 15px;
 display: flex;
 justify-content: space-around;
+flex-wrap: wrap;
 
 }
 
@@ -308,12 +301,13 @@ font-weight: bold;
 background-color: white;
 align-items: center;
 justify-content: space-around;
+
 }
 
 #infosup
 {
 
-display:flex ;
+display: flex;
 flex-direction: row;
 align-items: baseline;
 gap: 5px;
@@ -326,9 +320,8 @@ gap: 5px;
 color: #0065FC ;
 border: 2px solid rgba(242, 242, 242, 1.0);
 border-radius: 500px;
-padding: 4px 8px 5px 9px;
-margin: 0px 0px 20px 0px ;
-
+padding: 3px 7px 3px 7px;
+margin:  0px 0px 0px 0px;
 
 }
 
@@ -343,10 +336,12 @@ color: grey;
 {
 
 display: flex;
-flex-direction: row;
+flex-direction: column-reverse;
 justify-content: space-between;
 height: 30%;
-
+align-items: center;
+flex-wrap: nowrap;
+gap: 20px;
 }
 
 #hebergementmars
@@ -355,7 +350,7 @@ overflow: visible;
 background-color: #F2F2F2 ;
 border-radius: 30px;
 padding: 0px 0px 20px 0px ;
-width: 68%;
+width: 95%;
 height: 70%;
 position: relative;
 
@@ -366,24 +361,22 @@ position: relative;
 {
 	font-size: 23px;
 	position: relative;
-  width: 89%;
-  margin: 40px auto 10px auto;
+	top: 15px;
+	left: 35px;
+	margin-bottom: 30px;
 }
 
 
 #hebermarscard
 {
-width: 94%;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-overflow: visible;
 justify-content: center;
-margin: auto;
 }
 
 .card {
-  width: 29%; 
+  width: 320px; 
   height: 270px;
   margin: 20px auto ; 
   background-color: white; 
@@ -403,7 +396,6 @@ margin: auto;
 
 
 .card-image {
-  width: 95%;
   height: 70%;
   overflow: hidden;  
  	
@@ -491,8 +483,9 @@ color: #0065FC;
 #afficherplus
 {
 
-width: 90%;
-margin: auto;
+position: relative;
+left: 5%;
+
 }
 
 #afficherplus a
@@ -519,8 +512,8 @@ font-weight: bold;
 {
 background-color: #F2F2F2 ;
 border-radius: 30px;
-padding: 0px 0px 25px 0px ;
-width: 30%;
+padding: 0px 0px 50px 0px ;
+width: 95%;
 height: 790px;
 display: flex;
 flex-direction: column;
@@ -534,8 +527,8 @@ box-sizing: border-box;
 #entetepop
 {
 
-	margin: 18px 0px 0px 0px;
-	gap: 50px;
+	margin: 50px 0px 10px 0px;
+	gap: 270px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -545,22 +538,21 @@ box-sizing: border-box;
 }
 
 .cardpop {
-  width: 80%; 
-  height: 25%;
+  width: 90%; 
+  height: 245px;
   margin: 0px auto 20px auto; 
   background-color: white; 
   box-shadow: 0px 5px 20px #999; 
   border-radius: 30px;
   display: flex;
   flex-direction: row;
-  
 
 }
 
 
 
 .cardpop-image {
-  height: 94%;  
+  height: 95%;  
   width: 40%;
 	overflow: hidden;
   border: 5px solid white;
@@ -598,7 +590,7 @@ box-sizing: border-box;
 .cardpop-date
 {
 
-	font-size: 25px;
+	font-size: 30px;
 	position: absolute;
 	top: -15px;
 	left: 10px;
@@ -610,7 +602,7 @@ box-sizing: border-box;
 .cardpop-title
 {
 
-	font-size: 15px;
+	font-size: 20px;
 	position: absolute;
 	bottom: 60px;
 	z-index: 100;
@@ -629,6 +621,9 @@ left: 10px;
 
 
 
+
+
+
 #pophotel
 {
 position: relative;
@@ -643,10 +638,14 @@ transform: translate(-10% -90%);
 
 #troisiemesection
 {
-margin: 0px 0px 60px 0px;
+margin: 10px 0px 60px 0px;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
+align-items: center;
+flex-wrap: nowrap;
+position: relative;
+margin: auto;
 
 
 }
@@ -654,7 +653,8 @@ justify-content: space-around;
 #titreactivite
 {
 font-size: 25px ;
-
+text-align: center;
+margin: 50px 0px 0px 0px;
 }
 
 
@@ -663,49 +663,63 @@ font-size: 25px ;
 {
 
 display: flex;
-flex-direction: row;
-gap: 40px;
+flex-direction: column;
 
-
+align-items:center ;
+gap: 20px;
+margin: auto;
 }
 
 #responsiveactivite1
 {
-
+width: 95%;
 display: flex;
-flex: 1 50%;
-gap: 40px;
+flex-direction: row;
+flex-wrap: nowrap;
+margin: auto;
+justify-content: center;
+align-items: center ;
+gap: 20px;
 }
 
 #responsiveactivite2
 {
-
-display: flex;
-flex: 1 50%;
-gap: 40px;
-}
+  width: 95%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  margin: auto;
+  justify-content: center;
+  align-items: center ;
+  gap: 20px;
+  }
 
 .cardactivite {
-  width: 435px;
-  height: 80%; /*1*/
-  margin: 0px auto; /*2*/
-  background-color: white; /*3*/
-  box-shadow: 0px 5px 20px #999; /*4*/
+  width: 350px;
+  height: 710px; 
+  min-height: 605px;
+  margin: 60px 0px 50px 0px ; 
+  background-color: white; 
+  box-shadow: 0px 5px 20px #999;
   border-radius: 30px;
-  position: relative;
-  top: 5px;
+ 
+  
 }
-.cardactivite a { /*5*/
+
+
+.cardactivite a { 
   color: #333; 
   text-decoration: none;
 }
 
 .cardactivite-image {
-  height: 89%;/*1*/
-  position: relative;/*2*/
-  overflow: hidden;/*3*/
+  height: 90%;
+  position: relative;
+  overflow: hidden;
   border-radius: 30px 30px 0px 0px ;
 }
+
+
 .cardactivite-image img {
   width: 100%;/*4*/
   height: 115%;
@@ -715,9 +729,9 @@ gap: 40px;
 }
 
 .cardactivite-body {
-    text-align:center;  /*1*/
-  padding: 15px 20px; /*2*/
-  box-sizing: border-box; /*3*/
+    text-align:center; 
+  padding: 15px 20px; 
+  box-sizing: border-box;
 }
 
 .cardactivite-date {
@@ -748,28 +762,36 @@ top: 5px;
 
 }
 
-.cardactivitev2 {
-  width: 410px;
-  height: 41%;
+
+
+.cardactivitev2 
+{
+  width: 350px;
+  height: 350px;
   background-color: white;
   box-shadow: 0px 5px 20px #999;
   border-radius: 30px;
 }
-.cardactivitev2 a { /*5*/
+
+.cardactivitev2 a 
+{
   color: #333; 
   text-decoration: none;
 }
 
 
-.cardactivitev2-image {
-  height: 240px;/*1*/
+.cardactivitev2-image 
+{
+  height: 280px;/*1*/
   position: relative;/*2*/
   overflow: hidden;/*3*/
   border-radius: 30px 30px 0px 0px ;
 }
+
+
 .cardactivitev2-image img {
   width: 100%;
-  height: 100%;
+  height: 110%;
   object-fit: cover;
   object-position: 50% 40%;
  
@@ -793,11 +815,11 @@ top: 5px;
 
 
 .cardactivitev3 {
-  width: 410px;
-  height: 31%; /*1*/
- /*2*/
-  background-color: white; /*3*/
-  box-shadow: 0px 5px 20px #999; /*4*/
+  width: 350px;
+  height: 300px; 
+
+  background-color: white; 
+  box-shadow: 0px 5px 20px #999; 
   border-radius: 30px;
   position: relative;
 
@@ -808,23 +830,23 @@ top: 5px;
 }
 
 .cardactivitev3-image {
-  height: 70%;/*1*/
-  position: relative;/*2*/
-  overflow: hidden;/*3*/
+  height: 230px;
+  position: relative;
+  overflow: hidden;
   border-radius: 30px 30px 0px 0px ;
 }
 .cardactivitev3-image img {
   width: 100%;/*4*/
-  height: 100%;
+  height: 110%;
   object-fit: cover;
   object-position: center top;
 
 }
 
 .cardactivitev3-body {
-  text-align:center;  /*1*/
-  padding: 15px 20px; /*2*/
-  box-sizing: border-box; /*3*/
+  text-align:center;
+  padding: 15px 20px;
+  box-sizing: border-box;
 }
 
 .cardactivitev3-date {
@@ -852,7 +874,7 @@ top: 5px;
 position: absolute;
 bottom: 0;
 width: 100%;
-height: 200px;
+height: 480px;
 background-color: #F2F2F2;
 padding-bottom: 15px;
 padding-top: 25px;
@@ -864,20 +886,25 @@ padding-top: 25px;
 {  
 position: relative;
 display: flex;
-flex-direction: row;
+flex-direction: column;
 justify-content: left;
-gap: 22%;
+align-items: flex-start;
+gap: 6%;
 
 
 }
 
 
-#apropos , #NosHebergements , #assistance 
+#apropos , #NosHebergements , #assistance
+
 {
-display: flex ;
-flex-direction: column ;
+
+display: flex;
+flex-direction: column;
 justify-content: left;
 align-items: flex-start ;
+
+
 
 }
 
@@ -885,8 +912,8 @@ align-items: flex-start ;
 footer li
 {
 list-style: none;
-text-align: left;
-margin: 10px 0px 10px 0px;
+margin: 8px 0px 8px 0px;
+
 }
 
 footer li a
