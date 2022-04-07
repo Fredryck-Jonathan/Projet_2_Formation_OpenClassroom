@@ -175,7 +175,7 @@ flex-direction: row;
 	font-size: 18px;
 	background-color: #0065FC;
 	border-radius: 0px 18px 18px 0px;
-	padding: 16px 20px 18px 20px;
+	padding: 17px 20px 19px 20px;
 	z-index: 20;
 	right: 22px;
 	font-weight: 600;
@@ -380,18 +380,20 @@ flex-wrap: wrap;
 overflow: visible;
 justify-content: center;
 margin: auto;
+
 }
 
 .card {
   width: 29%; 
-  height: 270px;
+ 
   margin: 20px auto ; 
   background-color: white; 
   box-shadow: 0px 5px 20px #999; 
   border-radius: 30px;
-  overflow: visible;
- 
+  overflow: hidden;
+  aspect-ratio: 3/1;
   box-sizing: border-box;
+height: 270px;
 
 
 }
@@ -403,18 +405,16 @@ margin: auto;
 
 
 .card-image {
-  width: 95%;
-  height: 70%;
+  width: 97%;
+  height: 65%;
   overflow: hidden;  
  	
-  border: 7px solid white;
+  border: 5px solid white;
   border-radius: 30px ;
+  margin: 0;
+  padding: 0;
 
-  object-fit: contain;
-  object-position: center top;
-
-
-
+ 
 
 }
 .card-image img {
@@ -423,40 +423,55 @@ height: 90%;
 object-fit: cover
 }
 
+
+.card-body {
+
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 10px;
+
+  
+}
+
 .card-date
 {
 
 	font-size: 25px;
 	font-weight: normal;
-	position: relative;
-	bottom: 80px;
 
 	overflow: visible;
 	z-index: 20;
 
 
 }
+.card-date h5
+{
+
+padding: 0;
+margin: 0;
+
+}
+
 
 .card-title
 {
-	margin: -55px -13px 0px -14px;
+
 	font-size: 14px;
-		position: relative;
-	bottom: 103px;
 	font-weight: normal;
-	background-color: white;
-	padding: 35px 20px 0px 16px ;
+	
 	z-index: 10;
 
 }
 
-.card-excerpt
+.card-title p
 {
 
-	position: relative;
-	bottom: 110px;
+margin: 0;
 
 }
+
 
 
 .card-date, .card-title , .card-excerpt{
@@ -464,14 +479,6 @@ object-fit: cover
 
  
 
-}
-
-.card-body {
-  position: relative;
-  text-align:center;  
-  padding: 30px 20px 0px 20px;
-  z-index: 30;
-  overflow: visible;
 }
 
 .etoilegrise
@@ -586,23 +593,41 @@ box-sizing: border-box;
   
   display: flex;
   flex-direction: column;
- 	
+
+
   flex-wrap: nowrap;
   flex-shrink: 1;
 
-  gap: 0px;
+  gap: 10px;
   position: relative;
 }
 
 
 .cardpop-date
 {
-
+  margin-top: 10px;
+  margin-left: 10px;
 	font-size: 25px;
-	position: absolute;
+
 	top: -15px;
 	left: 10px;
 	z-index: 100;
+
+}
+
+.cardpop-date h5
+{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+.cardpop-title p 
+{
+
+margin: 0;
+padding: 0;
 
 }
 
@@ -611,7 +636,7 @@ box-sizing: border-box;
 {
 
 	font-size: 15px;
-	position: absolute;
+	margin-left: 10px;
 	bottom: 60px;
 	z-index: 100;
 	left: 10px;
@@ -664,7 +689,8 @@ font-size: 25px ;
 
 display: flex;
 flex-direction: row;
-gap: 40px;
+gap: 45px;
+flex-wrap: wrap;
 
 
 }
@@ -673,20 +699,22 @@ gap: 40px;
 {
 
 display: flex;
-flex: 1 50%;
-gap: 40px;
+flex: 1 40%;
+gap: 50px;
+padding-bottom: 0;
 }
 
 #responsiveactivite2
 {
 
 display: flex;
-flex: 1 50%;
-gap: 40px;
+flex: 1 40%;
+gap: 50px;
+
 }
 
 .cardactivite {
-  width: 435px;
+  width: 420px;
   height: 80%; /*1*/
   margin: 0px auto; /*2*/
   background-color: white; /*3*/
@@ -729,6 +757,12 @@ gap: 40px;
   bottom: 15px;
 }
 
+#premiercolomne
+{
+
+padding-bottom: 0px;
+
+}
 
 /* pour les petites colomne */
 
@@ -808,7 +842,7 @@ top: 5px;
 }
 
 .cardactivitev3-image {
-  height: 70%;/*1*/
+  height: 71%;/*1*/
   position: relative;/*2*/
   overflow: hidden;/*3*/
   border-radius: 30px 30px 0px 0px ;
