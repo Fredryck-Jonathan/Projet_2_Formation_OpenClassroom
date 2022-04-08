@@ -59,6 +59,14 @@ padding-bottom: 500px;
 
 }
 
+a
+{
+
+text-decoration: none;
+color: black;
+
+}
+
 
 /* réalisation de l'header version desktop */
 
@@ -193,10 +201,10 @@ flex-wrap: nowrap;
 	font-size: 18px;
 	background-color: #0065FC;
 	border-radius: 18px 18px 18px 18px;
-	padding: 16px 20px 16px 20px;
+	padding: 17px 20px 18px 20px;
 	z-index: 20;
 	font-weight: 600;
-  left: 80%;
+  left: 75%;
 }
 
 
@@ -603,7 +611,7 @@ position: relative;
 .cardpop-date
 {
 
-	font-size: 23px;
+	font-size: 21px;
 	position: absolute;
 	top: -15px;
 	left: 10px;

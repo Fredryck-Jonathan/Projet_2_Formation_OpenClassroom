@@ -45,6 +45,14 @@ padding-bottom: 190px;
 
 }
 
+a
+{
+
+text-decoration: none;
+color: black;
+
+}
+
 /* réalisation de l'header version desktop */
 
 header 
@@ -689,8 +697,8 @@ font-size: 25px ;
 
 display: flex;
 flex-direction: row;
-gap: 45px;
-flex-wrap: wrap;
+gap: 30px;
+flex-wrap: nowrap;
 
 
 }
@@ -700,8 +708,9 @@ flex-wrap: wrap;
 
 display: flex;
 flex: 1 40%;
-gap: 50px;
+gap: 25px;
 padding-bottom: 0;
+
 }
 
 #responsiveactivite2
@@ -709,12 +718,13 @@ padding-bottom: 0;
 
 display: flex;
 flex: 1 40%;
-gap: 50px;
+gap: 25px;
+
 
 }
 
 .cardactivite {
-  width: 420px;
+  width: 400px;
   height: 80%; /*1*/
   margin: 0px auto; /*2*/
   background-color: white; /*3*/
@@ -761,6 +771,7 @@ gap: 50px;
 {
 
 padding-bottom: 0px;
+padding-top: 0px;
 
 }
 
@@ -773,9 +784,9 @@ padding-bottom: 0px;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
-gap: 60px;
+gap: 45px;
 position: relative;
-top: 5px;
+
 
 
 
@@ -783,11 +794,12 @@ top: 5px;
 }
 
 .cardactivitev2 {
-  width: 410px;
-  height: 41%;
+  width: 400px;
+  height: 40%;
   background-color: white;
   box-shadow: 0px 5px 20px #999;
   border-radius: 30px;
+  margin-top: 2px;
 }
 .cardactivitev2 a { /*5*/
   color: #333; 
@@ -827,13 +839,13 @@ top: 5px;
 
 
 .cardactivitev3 {
-  width: 410px;
-  height: 31%; /*1*/
+  width: 400px;
+  height: 32%; /*1*/
  /*2*/
   background-color: white; /*3*/
   box-shadow: 0px 5px 20px #999; /*4*/
   border-radius: 30px;
-  position: relative;
+  margin-top: 2px;
 
 }
 .cardactivitev3 a { /*5*/
