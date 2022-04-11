@@ -91,7 +91,13 @@ header ul
 header ul li
 {
 	text-decoration-style: none;
-	margin: auto;
+	margin: 0px auto auto auto;
+  padding: 50px 10px 0px 10px;
+	color: black;
+	padding-left: 30px;
+	padding-right: 30px;
+	overflow: visible;
+	z-index: 500;
 
 }
 
@@ -100,12 +106,9 @@ header ul li a
 {
 
 	text-decoration: none;
-	padding: 32px 10px 0px 10px;
+  padding: 74px 10px 0px 10px;
 	color: black;
-	padding-left: 30px;
-	padding-right: 30px;
-	overflow: visible;
-	z-index: 500;
+  
 }
 
 header ul li a:hover
@@ -136,7 +139,7 @@ justify-content: left;
 #premiersection p
 {
 
-margin-top: 0px;
+margin-top: 10px;
 
 }
 
@@ -413,7 +416,7 @@ height: 270px;
 
 
 .card-image {
-  width: 97%;
+  width: 96%;
   height: 65%;
   overflow: hidden;  
  	
@@ -433,12 +436,12 @@ object-fit: cover
 
 
 .card-body {
-
+  margin-top: -10px;
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  margin-left: 10px;
+  gap: 7px;
+  margin-left: 15px;
 
   
 }
@@ -466,7 +469,7 @@ margin: 0;
 .card-title
 {
 
-	font-size: 14px;
+	font-size: 17px;
 	font-weight: normal;
 	
 	z-index: 10;
@@ -613,7 +616,7 @@ box-sizing: border-box;
 
 .cardpop-date
 {
-  margin-top: 10px;
+  margin-top: 15px;
   margin-left: 10px;
 	font-size: 25px;
 
@@ -643,9 +646,9 @@ padding: 0;
 .cardpop-title
 {
 
-	font-size: 15px;
+	font-size: 18px;
 	margin-left: 10px;
-	bottom: 60px;
+	bottom: 55px;
 	z-index: 100;
 	left: 10px;
 
@@ -671,8 +674,6 @@ transform: translate(-10% -90%);
 
 
 
-/* test */
-
 
 #troisiemesection
 {
@@ -680,6 +681,7 @@ margin: 0px 0px 60px 0px;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
+
 
 
 }
@@ -697,8 +699,9 @@ font-size: 25px ;
 
 display: flex;
 flex-direction: row;
-gap: 30px;
+gap: 10px;
 flex-wrap: nowrap;
+
 
 
 }
@@ -708,8 +711,9 @@ flex-wrap: nowrap;
 
 display: flex;
 flex: 1 40%;
-gap: 25px;
+gap: 10px;
 padding-bottom: 0;
+
 
 }
 
@@ -718,13 +722,13 @@ padding-bottom: 0;
 
 display: flex;
 flex: 1 40%;
-gap: 25px;
+gap: 10px;
 
 
 }
 
 .cardactivite {
-  width: 400px;
+  width: 415px;
   height: 80%; /*1*/
   margin: 0px auto; /*2*/
   background-color: white; /*3*/
@@ -784,8 +788,9 @@ padding-top: 0px;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
-gap: 45px;
+gap: 40px;
 position: relative;
+top: 5px;
 
 
 
@@ -794,7 +799,7 @@ position: relative;
 }
 
 .cardactivitev2 {
-  width: 400px;
+  width: 415px;
   height: 40%;
   background-color: white;
   box-shadow: 0px 5px 20px #999;
@@ -808,7 +813,7 @@ position: relative;
 
 
 .cardactivitev2-image {
-  height: 240px;/*1*/
+  height: 245px;/*1*/
   position: relative;/*2*/
   overflow: hidden;/*3*/
   border-radius: 30px 30px 0px 0px ;
@@ -839,7 +844,7 @@ position: relative;
 
 
 .cardactivitev3 {
-  width: 400px;
+  width: 415px;
   height: 32%; /*1*/
  /*2*/
   background-color: white; /*3*/
@@ -854,7 +859,7 @@ position: relative;
 }
 
 .cardactivitev3-image {
-  height: 71%;/*1*/
+  height: 73%;/*1*/
   position: relative;/*2*/
   overflow: hidden;/*3*/
   border-radius: 30px 30px 0px 0px ;

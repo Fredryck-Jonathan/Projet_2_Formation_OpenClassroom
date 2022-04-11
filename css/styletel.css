@@ -5,14 +5,6 @@
 
 /*Application de la police sur toute la page */
 
-body {
-
-  	font-family: 'Raleway', Arial, serif;
-
-	font-weight: normal;
-	width: 100%;
-	margin: auto;
-}
 
 #wrapper
 {
@@ -20,20 +12,19 @@ body {
 overflow-x: hidden;
 
 }
-input
+
+.dimensionpage
 {
 
-font-family: 'Raleway', Arial, serif;
-font-size: 18px;
+width: 100%;
 
 }
-
 
 .dimensionpageresponsive
 {
 
 width: 88%;
-margin: auto;
+
 
 }
 
@@ -44,13 +35,6 @@ border: 0;
 
 }
 
-#wrapper
-{
-
-position: relative;
-min-height: 100%;
-
-}
 
 #content-wrap
 {
@@ -59,29 +43,18 @@ padding-bottom: 500px;
 
 }
 
-a
-{
 
-text-decoration: none;
-color: black;
-
-}
 
 
 /* réalisation de l'header version desktop */
 
 header 
 {
-
-top: 10px;
+width: 100%;
 display: flex;
 flex-direction: column;
 justify-content: center;
-
-width: 100%;
-
-
-
+align-items: unset;
 }
 
 
@@ -98,11 +71,9 @@ margin: auto 45% 10px 40%;
 header ul
 
 {
-	list-style-type: none;
 	
-	display: flex;
-	flex-direction: row;
-text-align: center;
+	text-align: center;
+	align-items:unset;
 	width: 100%;
 	margin: auto;
 	padding: 0%;
@@ -118,30 +89,28 @@ header ul li
 {
 
 
-	color: black;
 	flex-basis: 100%;
 	border-bottom: 4px solid #F2F2F2;
 	padding: 10px 0px 15px 0px;
-
+	
 
 
 }
 
-header ul li a 
 
-{
-	text-decoration: none;
-
-	color: black;
-
-}
 
 header ul li:hover
 
 {
-overflow: visible;
+
 border-bottom: 4px solid #0065FC;
-color: #0065FC;
+border-top: 0px
+
+}
+
+header ul li a:hover{
+
+border-top: 0px;
 
 }
 
@@ -156,32 +125,15 @@ color: #0065FC;
 {
 width: 90%;
 overflow-x: hidden;
-display: flex;
-flex-direction: column;
-justify-content: left;
 
 }
 
 
-#logolocation
-{
-	
-	position: relative;
-	background-color: #F2F2F2;
-	border: 3px rgba(0, 0, 0, 1.0) ;
-	border-radius: 18px;
-	padding: 20px 30px 21px 20px;
-	z-index: 10;
-
-
-}
 
 #zonerecherche
 {
 
 position: relative;
-display: flex;
-flex-direction: row;
 width: 95%;
 justify-content: left;
 flex-wrap: nowrap;
@@ -195,6 +147,7 @@ flex-wrap: nowrap;
 
 #loupe
 {
+	visibility: visible;
 	position: absolute;
 	text-decoration: none;
 	color: white;
@@ -219,11 +172,9 @@ flex-wrap: nowrap;
 section form input
 {
 	position: absolute;
-	background-color: white;
-	text-decoration: none;
+
 	padding: 15px 16px 17px 10px;
-	border: 2px #F2F2F2 solid;
-	z-index: 15;
+
 	left: 14%;
 	
 }
@@ -239,8 +190,7 @@ visibility: hidden;
 
 #espacefiltre
 {
-position: relative;
-display: flex;
+
 flex-direction: column;
 align-items: flex-start;
 
@@ -257,12 +207,10 @@ font-size: 18px;
 #listfiltre
 {
 margin: 0;
-display: flex;
-flex-direction: row;
-text-decoration: none;
-list-style-type: none;
+
 padding: 0%;
 flex-wrap: wrap;
+justify-content: left;
 
 }
 
@@ -273,10 +221,7 @@ flex-wrap: wrap;
 #listfiltre li
 {
 
-text-decoration: none;
-border: 2px solid rgba(242, 242, 242, 1.0);
-border-radius: 50px;
-padding: 0px 15px 0px 0px;
+
 margin: 15px 15px 0px 0px;
 flex-wrap: wrap;
 
@@ -285,68 +230,20 @@ flex-wrap: wrap;
 
 
 
-#économie, #Familial, #romantique, #Animaux
-{
 
-background-color: #DEEBFF;
-color: #0065FC;
-border: rgba(0, 0, 0, 0.0);
-border-radius: 50px;
-padding: 15px 15px 15px 15px;
-margin: 0px 10px 0px 0px;
 
-}
-
-#Familial
-{
-
-padding: 15px 17px 15px 17px;
-
-}
-
-#listfiltre li:hover, #listfiltre a:hover
-{
-
-	background-color: whitesmoke;
-	border-radius: 50px
-}
-
-#listfiltre a
-{
-display: flex;
-
-text-decoration: none;
-color: black;
-font-weight: bold;
-background-color: white;
-align-items: center;
-justify-content: space-around;
-
-}
 
 #infosup
 {
-margin: auto;
-display: flex;
-flex-direction: row;
+margin: 20px auto auto auto;
+
 justify-content: left;
-align-items: baseline;
+
 gap: 10px;
 
 }
 
 
-#info
-{
-
-color: #0065FC ;
-border: 2px solid rgba(242, 242, 242, 1.0);
-border-radius: 500px;
-padding: 4px 8px 4px 8px;
-
-
-
-}
 
 #plusde500
 {
@@ -360,31 +257,31 @@ display: inline-block;
 #deuxiemesec
 {
 
-display: flex;
+
 flex-direction: column-reverse;
-justify-content: space-between;
-height: 30%;
+
+
 flex-wrap: nowrap;
+
 gap: 20px;
+
 }
 
 #hebergementmars
 {
-overflow: visible;
-border-radius: 30px;
-padding: 0px 0px 20px 0px ;
+
+background-color: white;
 width: 100%;
-height: 70%;
+
 margin: auto;
-position: relative;
+
 
 
 }
 
 #titreheber
 {
-	font-size: 23px;
-	position: relative;
+
 	top: 15px;
 	left: 35px;
 	margin-bottom: 30px;
@@ -393,7 +290,7 @@ position: relative;
 
 #hebermarscard
 {
-display: flex;
+
 flex-direction: column;
 gap: 0px;
 
@@ -401,107 +298,71 @@ gap: 0px;
 
 .card {
   width: 88%; 
-  height: 210px;
+  height: 200px;
   margin: 10px auto ; 
-  background-color: white; 
-  box-shadow: 0px 5px 20px #999; 
-  border-radius: 30px;
+
   overflow: visible;
  
   box-sizing: border-box;
 
 
 }
-.card a { 
-  color: #333; 
-  text-decoration: none;
- 
-}
+
+
 
 
 .card-image {
   height: 61%;
-  overflow: hidden;  
- 	
+  width: 95%;
+margin: 0;
+padding: 0;
+margin-top: -10px;
   border: 7px solid white;
-  border-radius: 30px ;
+ 
 
-  object-fit: contain;
-  object-position: center top;
 
 
 
 
 }
-.card-image img {
-width: 100%;
-height: 90%;
-object-fit: cover
-}
+
+
+.card-body {
+
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-left: 10px;
+  
+	
+  }
 
 .card-date
 {
 
 	font-size: 22px;
 	font-weight: normal;
-	position: relative;
-	bottom: 52px;
-
-	overflow: visible;
-	z-index: 20;
+	
 
 
 }
 
 .card-title
 {
-	margin: -55px -13px 0px -14px;
+	
 	font-size: 14px;
-		position: relative;
-	bottom: 72px;
+	position: relative;
+	
 	font-weight: normal;
-	padding: 35px 20px 0px 16px ;
+
 	z-index: 10;
 
 }
 
-.card-excerpt
-{
-
-	position: relative;
-	bottom: 80px;
-
-}
 
 
-.card-date, .card-title , .card-excerpt{
-  text-align:left ;
 
- 
-
-}
-
-.card-body {
-  position: relative;
-  text-align:center;  
-  padding: 10px 20px 0px 20px;
-  z-index: 30;
-  overflow: visible;
-}
-
-.etoilegrise
-{
-
-	color: #F2F2F2;
-
-}
-
-.etoilebleu
-{
-
-color: #0065FC;
-
-}
 
 #afficherplus
 {
@@ -510,21 +371,6 @@ left: 7%;
 
 }
 
-#afficherplus a
-{
-
-	font-size: 22px;
-	text-decoration: none;
-	color: black;
-
-}
-
-strong
-{
-
-font-weight: bold;
-
-}
 
 
 
@@ -532,14 +378,15 @@ font-weight: bold;
 
 #pop
 {
-background-color: #F2F2F2 ;
+border-radius: 0;
 padding-bottom: 20px;
 width: 100%;
+height: auto;
+padding: auto;
 
-display: flex;
-flex-direction: column;
 gap: 10px;
 
+justify-content: flex-start;
 
 
 }
@@ -550,83 +397,77 @@ gap: 10px;
  
 	margin: 5px 25px 0px 25px;
 	gap: 90px;
-	display: flex;
-	flex-direction: row;
+
 	justify-content: left;
-	align-items: center;
+
 
 
 }
 
-.cardpop {
+.cardpop 
+{
+
   width: 90%; 
-  height: 170px;
+  height: 150px;
   margin: 0px auto 0px auto; 
-  background-color: white; 
-  box-shadow: 0px 5px 20px #999; 
-  border-radius: 30px;
-  display: flex;
-  flex-direction: row;
-  
+border-radius: 20px;
 
 }
 
 
 
-.cardpop-image {
-  height: 94%;  
+.cardpop-image 
+{
+	height: 93%;
   width: 39%;
-	overflow: hidden;
-  border: 5px solid white;
-  border-radius: 30px 0px 0px 30px ;
-  z-index: 50;
-
+  border-radius: 20px 0px 0px 20px ;
 
 }
-.cardpop-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 60;
-}
 
 
-.cardpop-body {
- 
-
-  width: 50%;
-  
-
-  display: flex;
-  flex-direction: column;
- 	
-  flex-wrap: nowrap;
 
 
-  gap: 0px;
-position: relative;
+.cardpop-body 
+{
+	height: 88%;
+	width: 60%;
+	margin: auto;
+	justify-content: space-around;
+	gap: 0px;
+
 }
 
 
 .cardpop-date
 {
 
-	font-size: 21px;
+	font-size: 20px;
 	position: absolute;
-	top: -15px;
-	left: 10px;
+	
 	z-index: 100;
 
 }
+.cardpop-date h5
+{
 
+margin: inherit;
+
+
+}
+.cardpop-title p
+{
+
+margin: auto;
+
+}
 
 .cardpop-title
 {
 
-	font-size: 15px;
+font-size: 15px;
 position: absolute;
 top: 60px;
-	left: 10px;
+
 
 
 }
@@ -634,9 +475,9 @@ top: 60px;
 .cardpop-excerpt
 {
   font-size: 15px;
-position: absolute;
-top:135px;
-left: 10px;
+
+top:120px;
+left: 20px;
 
 	
 }
@@ -646,23 +487,12 @@ left: 10px;
 
 
 
-#pophotel
-{
-position: relative;
-transform: translate(-10% -90%);
 
-}
-
-
-
-/* test */
 
 
 #troisiemesection
 {
 margin: 10px auto 60px auto;
-display: flex;
-flex-direction: column;
 gap: 10px;
 flex-wrap: nowrap;
 position: relative;
@@ -674,25 +504,37 @@ width: 88%;
 
 #titreactivite
 {
-font-size: 25px ;
+
 text-align: left;
 margin: 50px 0px 20px 0px;
 }
 
 
 
+
 #touteslescolomnes
 {
 width: 100%;
-display: flex;
 flex-direction: column;
 gap: 10px;
-display: inline-block;
 position: relative;
-
 margin: auto;
 }
 
+#deuxiemecolomne , #colomnequatre
+{
+
+gap: 10px;
+
+}
+
+#responsiveactivite1, #responsiveactivite2
+{
+
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
 
 .cardactivite, .cardactivitev2 , .cardactivitev3 {
   width: 100%;
@@ -700,10 +542,7 @@ margin: auto;
   margin: auto;
   min-height: 200px;
   margin-bottom: 20px;
-  background-color: white; 
-  box-shadow: 0px 5px 20px #999;
-  border-radius: 30px;
-  position: relative;
+ 
   display: inline-block;
 }
 
@@ -746,10 +585,20 @@ margin: auto;
 }
 
 
+#fortpoimg img
+{
+
+transform: translate(0px , -30px);
+
+}
 
 
+#VieuxPort img
+{
 
+transform: translate(0px , -10px);
 
+}
 
 
 /*Pied de page */
@@ -757,23 +606,18 @@ margin: auto;
 #pieddepage
 
 {
-position: absolute;
-bottom: 0;
-width: 100%;
+
 height: 480px;
-background-color: #F2F2F2;
-padding-bottom: 15px;
-padding-top: 25px;
+
 }
 
 
 #pieddepagecolomne
 
 {  
-position: relative;
-display: flex;
+
 flex-direction: column;
-justify-content: left;
+
 align-items: flex-start;
 gap: 6%;
 
@@ -781,35 +625,16 @@ gap: 6%;
 }
 
 
-#apropos , #NosHebergements , #assistance
-
-{
-
-display: flex;
-flex-direction: column;
-justify-content: left;
-align-items: flex-start;
-
-
-
-
-}
-
 
 
 
 footer li
 {
-list-style: none;
+
 margin: 8px 0px 8px 0px;
 
 
 }
 
-footer li a
-{
-text-decoration: none;
-color: black;
 
-}
 
