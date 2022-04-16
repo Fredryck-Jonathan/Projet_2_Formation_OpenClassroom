@@ -133,13 +133,17 @@ overflow-x: hidden;
 #zonerecherche
 {
 
-position: relative;
-width: 95%;
-justify-content: left;
-flex-wrap: nowrap;
+margin: 0px;
 }
 
+#bouton
+{
 
+display:flex;
+flex-direction: row-reverse;
+
+
+}
 
 
 
@@ -148,16 +152,15 @@ flex-wrap: nowrap;
 #loupe
 {
 	visibility: visible;
-	position: absolute;
+
 	text-decoration: none;
 	color: white;
 	font-size: 18px;
 	background-color: #0065FC;
-	border-radius: 18px 18px 18px 18px;
+	border-radius: 18px;
 	padding: 17px 20px 18px 20px;
 	z-index: 20;
-	font-weight: 600;
-  left: 75%;
+	margin-left: -10px;
 }
 
 
@@ -171,13 +174,12 @@ flex-wrap: nowrap;
 
 section form input
 {
-	position: absolute;
 
-	padding: 15px 16px 17px 10px;
+	padding: 16px 20px 18px 10px;
 
-	left: 14%;
-	
+
 }
+
 
 #rechercherbleu
 {
@@ -283,8 +285,8 @@ margin: auto;
 {
 
 	top: 15px;
-	left: 35px;
-	margin-bottom: 30px;
+	left: 25px;
+	margin-bottom: 40px;
 }
 
 
@@ -292,19 +294,21 @@ margin: auto;
 {
 
 flex-direction: column;
-gap: 0px;
+gap: 10px;
 
 }
 
 .card {
-  width: 88%; 
-  height: 200px;
+	aspect-ratio: 2/1;
+  width: 90%; 
+  height: auto;
   margin: 10px auto ; 
 
   overflow: visible;
  
   box-sizing: border-box;
-
+	border-radius: 25px;
+	border: 1px solid white;
 
 }
 
@@ -312,14 +316,15 @@ gap: 0px;
 
 
 .card-image {
-  height: 61%;
-  width: 95%;
-margin: 0;
+
+  aspect-ratio: 8/5;
+  width: 98%;
+  height: 100%;
+margin: auto;
 padding: 0;
 margin-top: -10px;
-  border: 7px solid white;
- 
 
+ border-radius: 25px;
 
 
 
@@ -329,37 +334,22 @@ margin-top: -10px;
 
 .card-body {
 
-	height: auto;
+	height: 50%;
 	display: flex;
 	flex-direction: column;
-	gap: 5px;
-	margin-left: 10px;
-  
+	gap: 5%;
+	margin-left: 15px;
+
+	
 	
   }
 
-.card-date
-{
+  .card-body h5
+  {
 
-	font-size: 22px;
-	font-weight: normal;
-	
+font-size: 21px;
 
-
-}
-
-.card-title
-{
-	
-	font-size: 14px;
-	position: relative;
-	
-	font-weight: normal;
-
-	z-index: 10;
-
-}
-
+  }
 
 
 
@@ -367,7 +357,7 @@ margin-top: -10px;
 #afficherplus
 {
 position: relative;
-left: 7%;
+left: 0%;
 
 }
 
@@ -378,15 +368,6 @@ left: 7%;
 
 #pop
 {
-border-radius: 0;
-padding-bottom: 20px;
-width: 100%;
-height: auto;
-padding: auto;
-
-gap: 10px;
-
-justify-content: flex-start;
 
 
 }
@@ -394,21 +375,29 @@ justify-content: flex-start;
 
 #entetepop
 {
- 
-	margin: 5px 25px 0px 25px;
-	gap: 90px;
+	font-size: 15px;
+	padding: 0px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+	gap: 0px;
+}
 
-	justify-content: left;
-
-
+#colomnepop
+{
+gap: 15px;
+margin-bottom: 28px;
 
 }
 
 .cardpop 
 {
-
+	aspect-ratio: 5/2;
   width: 90%; 
-  height: 150px;
+  height: auto;
   margin: 0px auto 0px auto; 
 border-radius: 20px;
 
@@ -418,66 +407,70 @@ border-radius: 20px;
 
 .cardpop-image 
 {
-	height: 93%;
-  width: 39%;
-  border-radius: 20px 0px 0px 20px ;
+	aspect-ratio: 5/2;
+	height: 95%;
+  width: 98%;
+  border-radius: 20px ;
+ 
 
 }
+.zoneimagepop
+{
+flex-shrink: 5;
+flex-grow: 1;
+width: 40%;
 
+}
+.cardpop-image img
+{
+max-width: 100%;
+ width: 100%;
+
+
+
+}
 
 
 
 .cardpop-body 
 {
 	height: 88%;
-	width: 60%;
+	width: 52%;
 	margin: auto;
-	justify-content: space-around;
-	gap: 0px;
+	margin-left: 20px;
+	gap: 10px;
+	flex-grow: 2;
 
 }
-
-
-.cardpop-date
+#hotelbleublanc .cardpop-body 
 {
 
-	font-size: 20px;
-	position: absolute;
-	
-	z-index: 100;
+    margin-left: 25px;
 
 }
-.cardpop-date h5
+
+
+.cardpop-body h5
 {
 
-margin: inherit;
-
-
-}
-.cardpop-title p
-{
-
-margin: auto;
+font-size: 18px;
 
 }
 
-.cardpop-title
+.cardpop-body p
 {
 
 font-size: 15px;
-position: absolute;
-top: 60px;
-
-
 
 }
+
+
 
 .cardpop-excerpt
 {
   font-size: 15px;
 
-top:120px;
-left: 20px;
+
 
 	
 }
@@ -519,6 +512,7 @@ flex-direction: column;
 gap: 10px;
 position: relative;
 margin: auto;
+height: 100%;
 }
 
 #deuxiemecolomne , #colomnequatre
@@ -534,49 +528,53 @@ gap: 10px;
 display: flex;
 flex-direction: column;
 gap: 10px;
+width: 96%;
 }
+#premiercolomne, #deuxiemecolomne, #colomnequatre
+{
 
+width: 100%;
+
+}
 .cardactivite, .cardactivitev2 , .cardactivitev3 {
-  width: 100%;
-  height: 170px; 
+width: 100%;
+  height: auto; 
   margin: auto;
-  min-height: 200px;
+  max-height: unset;
+  min-height: unset;
+  min-width: auto;
+  aspect-ratio: 8/5;
   margin-bottom: 20px;
- 
-  display: inline-block;
+  
+
 }
 
 
-.cardactivite a, .cardactivitev2 a , .cardactivitev3 a { 
-  color: #333; 
-  text-decoration: none;
-}
 
 .cardactivite-image , .cardactivitev2-image, .cardactivitev3-image {
-  height: 75%;
-  position: relative;
+  height: 100%;
+aspect-ratio: 8/5;
   overflow: hidden;
   border-radius: 30px 30px 0px 0px ;
+  width: 100%;
+  min-height: unset
 }
 
 
 .cardactivite-image img , .cardactivitev2-image img , .cardactivitev3-image img {
   width: 100%;/*4*/
-  height: 150%;
+height:76% ;
+max-height: unset;
   object-fit: cover;
- 
+  object-position: 0px -5px fixed;
+	aspect-ratio: auto
 
 
 }
 
-.cardactivite-body , .cardactivitev2-body, .cardactivitev3-body{
-    text-align:center; 
-  padding: 15px 20px; 
-  box-sizing: border-box;
-}
 
 .cardactivite-date, .cardactivitev2-date, .cardactivitev3-date {
- 
+
   text-align:left;
   font-weight: bold;
   color: black;
@@ -584,21 +582,14 @@ gap: 10px;
   bottom: 20px;
 }
 
-
-#fortpoimg img
+#parcnational
 {
 
-transform: translate(0px , -30px);
+width: 100%;
 
 }
 
 
-#VieuxPort img
-{
-
-transform: translate(0px , -10px);
-
-}
 
 
 /*Pied de page */
