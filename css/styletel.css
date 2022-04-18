@@ -40,7 +40,7 @@ border: 0;
 {
 
 padding-bottom: 500px;
-
+overflow-x: hidden
 }
 
 
@@ -310,6 +310,7 @@ gap: 10px;
 	border-radius: 25px;
 	border: 1px solid white;
 
+
 }
 
 
@@ -326,11 +327,16 @@ margin-top: -10px;
 
  border-radius: 25px;
 
-
+ margin-bottom: 20px;
 
 
 }
+.card-image img
+{
 
+height: 60%;
+
+}
 
 .card-body {
 
@@ -368,7 +374,9 @@ left: 0%;
 
 #pop
 {
-
+border-radius: 0%;
+width: 100%;
+overflow-x: hidden;
 
 }
 
