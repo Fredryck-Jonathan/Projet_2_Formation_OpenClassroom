@@ -39,7 +39,7 @@ border: 0;
 #content-wrap
 {
 
-padding-bottom: 500px;
+padding-bottom: 0px;
 overflow-x: hidden
 }
 
@@ -62,8 +62,7 @@ align-items: unset;
 {
 display: flex;
 width: 25%;
-height: 25%;
-align-self: center;
+
 margin: auto 45% 10px 40%;
 
 }
@@ -73,8 +72,7 @@ header ul
 {
 	
 	text-align: center;
-	align-items:unset;
-	width: 100%;
+	
 	margin: auto;
 	padding: 0%;
 	
@@ -134,14 +132,15 @@ overflow-x: hidden;
 {
 
 margin: 0px;
+
 }
+
 
 #bouton
 {
 
 display:flex;
 flex-direction: row-reverse;
-
 
 }
 
@@ -151,16 +150,16 @@ flex-direction: row-reverse;
 
 #loupe
 {
-	visibility: visible;
 
-	text-decoration: none;
-	color: white;
-	font-size: 18px;
-	background-color: #0065FC;
-	border-radius: 18px;
-	padding: 17px 20px 18px 20px;
-	z-index: 20;
-	margin-left: -10px;
+visibility: visible;
+color: white;
+font-size: 18px;
+background-color: #0065FC;
+border-radius: 18px;
+padding: 17px 20px 18px 20px;
+z-index: 20;
+margin-left: -10px;
+
 }
 
 
@@ -175,14 +174,14 @@ flex-direction: row-reverse;
 section form input
 {
 
-	padding: 16px 20px 18px 10px;
-
+padding: 16px 20px 18px 10px;
 
 }
 
 
 #rechercherbleu
 {
+
 visibility: hidden;
 
 }
@@ -194,25 +193,15 @@ visibility: hidden;
 {
 
 flex-direction: column;
-align-items: flex-start;
-
 
 }
 
-#espacefiltre h2
-{
-font-size: 18px;
 
-
-}
 
 #listfiltre
 {
-margin: 0;
 
 padding: 0%;
-flex-wrap: wrap;
-justify-content: left;
 
 }
 
@@ -222,7 +211,6 @@ justify-content: left;
 
 #listfiltre li
 {
-
 
 margin: 15px 15px 0px 0px;
 flex-wrap: wrap;
@@ -237,37 +225,18 @@ flex-wrap: wrap;
 
 #infosup
 {
+
 margin: 20px auto auto auto;
-
-justify-content: left;
-
 gap: 10px;
 
 }
 
 
 
-#plusde500
-{
-color: black;
-display: inline-block;
 
-}
 
 /* test hebergement et pop */
 
-#deuxiemesec
-{
-
-
-flex-direction: column-reverse;
-
-
-flex-wrap: nowrap;
-
-gap: 20px;
-
-}
 
 #hebergementmars
 {
@@ -275,18 +244,15 @@ gap: 20px;
 background-color: white;
 width: 100%;
 
-margin: auto;
-
-
-
 }
+
 
 #titreheber
 {
 
-	top: 15px;
-	left: 25px;
-	margin-bottom: 40px;
+left: 25px;
+margin-bottom: 40px;
+
 }
 
 
@@ -298,39 +264,33 @@ gap: 10px;
 
 }
 
-.card {
-	aspect-ratio: 2/1;
-  width: 90%; 
-  height: auto;
-  margin: 10px auto ; 
+.card
+{
 
-  overflow: visible;
- 
-  box-sizing: border-box;
-	border-radius: 25px;
-	border: 1px solid white;
-
+aspect-ratio: 2/1;
+width: 90%;  
+margin: 10px auto ; 
+border-radius: 25px;
+border: 1px solid white;
+overflow: visible;
 
 }
 
 
 
 
-.card-image {
+.card-image 
+{
 
-  aspect-ratio: 8/5;
-  width: 98%;
-  height: 100%;
-margin: auto;
-padding: 0;
+aspect-ratio: 8/5;
+width: 98%;
+height: 100%;
 margin-top: -10px;
-
- border-radius: 25px;
-
- margin-bottom: 20px;
-
+border-radius: 25px;
+margin-bottom: 20px;
 
 }
+
 .card-image img
 {
 
@@ -338,97 +298,63 @@ height: 60%;
 
 }
 
-.card-body {
+.card-body 
+{
 
-	height: 50%;
-	display: flex;
-	flex-direction: column;
-	gap: 5%;
-	margin-left: 15px;
-
+height: 50%;
+gap: 5%;
 	
-	
-  }
+}
 
-  .card-body h5
-  {
+.card-body h5
+{
 
 font-size: 21px;
-
-  }
-
-
-
-
-#afficherplus
-{
-position: relative;
-left: 0%;
 
 }
 
 
 
 
-/* test POP */
+/* Partie POP */
 
 #pop
 {
+
 border-radius: 0%;
 width: 100%;
-overflow-x: hidden;
+
 
 }
 
 
 #entetepop
 {
-	font-size: 15px;
-	padding: 0px;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-	gap: 0px;
+
+font-size: 15px;
+padding: 0px;
+width: 90%;
+margin: auto;
+
 }
 
 #colomnepop
 {
-gap: 15px;
+
 margin-bottom: 28px;
 
 }
 
 .cardpop 
 {
-	aspect-ratio: 5/2;
-  width: 90%; 
-  height: auto;
-  margin: 0px auto 0px auto; 
+
+margin: 0px auto 0px auto; 
 border-radius: 20px;
 
 }
 
 
 
-.cardpop-image 
-{
-	aspect-ratio: 5/2;
-	height: 95%;
-  width: 98%;
-  border-radius: 20px ;
- 
-
-}
-.zoneimagepop
-{
-flex-shrink: 5;
-flex-grow: 1;
-width: 40%;
-
-}
 .cardpop-image img
 {
 max-width: 100%;
@@ -442,18 +368,19 @@ max-width: 100%;
 
 .cardpop-body 
 {
-	height: 88%;
-	width: 52%;
-	margin: auto;
-	margin-left: 20px;
-	gap: 10px;
-	flex-grow: 2;
+
+height: 88%;
+margin: auto;
+margin-left: 20px;
+gap: 10px;
 
 }
+
+
 #hotelbleublanc .cardpop-body 
 {
 
-    margin-left: 25px;
+margin-left: 25px;
 
 }
 
@@ -476,10 +403,8 @@ font-size: 15px;
 
 .cardpop-excerpt
 {
-  font-size: 15px;
 
-
-
+font-size: 15px;
 	
 }
 
@@ -493,35 +418,23 @@ font-size: 15px;
 
 #troisiemesection
 {
+
 margin: 10px auto 60px auto;
 gap: 10px;
-flex-wrap: nowrap;
-position: relative;
 width: 88%;
 
 
 
 }
 
+
 #titreactivite
 {
 
-text-align: left;
 margin: 50px 0px 20px 0px;
+
 }
 
-
-
-
-#touteslescolomnes
-{
-width: 100%;
-flex-direction: column;
-gap: 10px;
-position: relative;
-margin: auto;
-height: 100%;
-}
 
 #deuxiemecolomne , #colomnequatre
 {
@@ -530,108 +443,67 @@ gap: 10px;
 
 }
 
+
 #responsiveactivite1, #responsiveactivite2
 {
 
-display: flex;
 flex-direction: column;
 gap: 10px;
 width: 96%;
+
 }
+
+
 #premiercolomne, #deuxiemecolomne, #colomnequatre
 {
 
 width: 100%;
 
 }
-.cardactivite, .cardactivitev2 , .cardactivitev3 {
-width: 100%;
-  height: auto; 
-  margin: auto;
-  max-height: unset;
-  min-height: unset;
-  min-width: auto;
-  aspect-ratio: 8/5;
-  margin-bottom: 20px;
+.cardactivite, .cardactivitev2 , .cardactivitev3 
+{
+
+height: auto; 
+margin: auto;
+min-height: unset;
+margin-bottom: 20px;
   
-
 }
 
 
 
-.cardactivite-image , .cardactivitev2-image, .cardactivitev3-image {
-  height: 100%;
+.cardactivite-image , .cardactivitev2-image, .cardactivitev3-image 
+{
+
 aspect-ratio: 8/5;
-  overflow: hidden;
-  border-radius: 30px 30px 0px 0px ;
-  width: 100%;
-  min-height: unset
+
 }
 
 
-.cardactivite-image img , .cardactivitev2-image img , .cardactivitev3-image img {
-  width: 100%;/*4*/
+.cardactivite-image img , .cardactivitev2-image img , .cardactivitev3-image img 
+{
+
 height:76% ;
-max-height: unset;
-  object-fit: cover;
-  object-position: 0px -5px fixed;
-	aspect-ratio: auto
+object-fit: cover;
+transform: translateY(0px);
 
 
 }
 
 
-.cardactivite-date, .cardactivitev2-date, .cardactivitev3-date {
 
-  text-align:left;
-  font-weight: bold;
-  color: black;
-  position: relative;
-  bottom: 20px;
+.cardactivite-body, .cardactivitev2-body, .cardactivitev3-body
+{
+
+margin: 10px auto 20px 10px;
+
 }
+
 
 #parcnational
 {
 
 width: 100%;
-
-}
-
-
-
-
-/*Pied de page */
-
-#pieddepage
-
-{
-
-height: 480px;
-
-}
-
-
-#pieddepagecolomne
-
-{  
-
-flex-direction: column;
-
-align-items: flex-start;
-gap: 6%;
-
-
-}
-
-
-
-
-
-footer li
-{
-
-margin: 8px 0px 8px 0px;
-
 
 }
 

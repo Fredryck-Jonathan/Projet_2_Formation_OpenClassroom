@@ -2,10 +2,16 @@
 #content-wrap
 {
 
-padding-bottom: 500px;
+padding-bottom: 0px;
 
 }
 
+.dimensionpage
+{
+
+width: 90%;
+
+}
 
 
 /* test hebergement et pop */
@@ -13,21 +19,14 @@ padding-bottom: 500px;
 #deuxiemesec
 {
 
-
-flex-direction: row;
-justify-content: left;
-
-flex-wrap: nowrap;
 gap: 30px;
+
 }
 
 #hebergementmars
 {
 
 width: 60%;
-height: 70%;
-
-
 
 }
 
@@ -41,9 +40,10 @@ height: 70%;
 
 
 
-.card {
-  width: 45%; 
-  overflow: visible;
+.card 
+{
+
+width: 45%; 
 
 }
 
@@ -59,20 +59,17 @@ height: 70%;
 .card-body h5
 {
 
-font-size: 19px;
+font-size: 17px;
 
 }
 
-
-
-
-#afficherplus
+.card-body p
 {
 
-position: relative;
-left: 2%;
+font-size: 16px;
 
 }
+
 
 
 
@@ -82,10 +79,7 @@ left: 2%;
 #pop
 {
 
-
 width: 40%;
-height: auto;
-justify-content: flex-start;
 gap: 10px;
 
 }
@@ -94,10 +88,8 @@ gap: 10px;
 #entetepop
 {
 
-	width: 85%;
-  margin: 10px auto 10px auto;
-
- 
+width: 85%;
+margin: 10px auto 10px auto;
 
 }
 
@@ -108,15 +100,13 @@ gap: 50px;
 
 }
 
-.cardpop {
-  width: 85%; 
-  height: 250px;
-  margin: 0px auto 20px auto; 
-  background-color: white; 
-  box-shadow: 0px 5px 20px #999; 
-  border-radius: 30px;
-  display: flex;
-  flex-direction: row;
+.cardpop 
+{
+
+width: 85%; 
+height: 250px;
+margin: 0px auto 20px auto; 
+border-radius: 30px;
 
 }
 
@@ -132,8 +122,9 @@ width:65%;
 .cardpop-body 
 
 {
- margin-left: 0px;
-  gap: 20px;
+
+margin-left: 0px;
+gap: 20px;
 
 }
 
@@ -148,7 +139,7 @@ font-size: 17px;
 .cardpop-body p
 {
 
-
+font-size: 14px;
 
 }
 
@@ -165,11 +156,8 @@ font-size: 17px;
 
 #troisiemesection
 {
-margin: 10px 0px 70px 0px;
 
-align-items: center;
-flex-wrap: wrap;
-position: relative;
+margin: 10px 0px 70px 0px;
 
 
 
@@ -187,60 +175,46 @@ margin: 50px 0px 0px 0px;
 #touteslescolomnes
 {
 
-
 flex-direction: column;
 
-align-items:center;
-
-margin: auto;
-
 }
+
 
 #responsiveactivite1
 {
 
-
-flex-direction: row;
-flex-wrap: nowrap;
-margin: auto 0px auto 0px;
-justify-content: space-around;
 align-items: center ;
 gap: 40px;
-width: 90%;
-flex: 1 50%;
+
 }
 
 #responsiveactivite2
 {
  
+flex-direction: row-reverse;
+align-items: center ;
+gap: 40px;
 
-  flex-direction: row-reverse;
-  flex-wrap: nowrap;
-  margin: auto;
-  justify-content: space-around;
-  align-items: center ;
-  gap: 40px;
-  width: 90%;
-  }
-
-.cardactivite {
-  min-width: 350px;
-  width: 100%;
-  height: 710px; 
-  min-height: 605px;
-  margin: 60px 0px 50px 0px ; 
-
-
-
- 
-  
 }
 
-#premiercolomne
+.cardactivite 
 {
 
-width: 50%;
+width: 100%;
+height: 710px; 
+
+margin: 60px 0px 50px 0px ; 
+ 
 }
+
+.cardactivite-image img
+{
+
+height: 630px;
+
+}
+
+
 
 #parcnational
 {
@@ -255,26 +229,25 @@ width:50%;
 #colomnequatre, #deuxiemecolomne
 
 {
-width: 50%;
-gap: 60px;
 
-top: 10px;
+gap: 61px;
+margin-top: 7px;
 
+}
 
+.cardactivite-body, .cardactivitev2-body, .cardactivitev3-body
+{
 
+margin: 20px 0px 20px 20px;
 
 }
 
 
-
 .cardactivitev2 
 {
-  width: 100%;
- 
 
-  height: 350px;
+height: 350px;
 
-  margin: 0px
 }
 
 
@@ -289,23 +262,17 @@ top: 10px;
 .cardactivitev2-image img 
 {
 
-
-  height: 78%;
+height: 270px;
  
- 
-
 }
 
 
 
 
-.cardactivitev3 {
-  width: 100%;
+.cardactivitev3 
+{
 
-  height: 300px; 
-
-
-  margin: 0px;
+height: 300px; 
 
 }
 
@@ -315,14 +282,18 @@ top: 10px;
 .cardactivitev3-image img 
 {
 
-  height: 74%;
-
+  height: 250px;
+  transform: translateY(-30px);
 
 
 }
 
+.cardactivitev3-body
+{
 
+  margin: -10px 0px 30px 20px;
 
+}
 
 
 
@@ -333,21 +304,17 @@ top: 10px;
 /*Pied de page */
 
 #pieddepage
-
 {
 
 height: 480px;
+
 }
 
 
 #pieddepagecolomne
-
 {  
 
 flex-direction: column;
-align-items: flex-start;
-gap: 6%;
-
 
 }
 
