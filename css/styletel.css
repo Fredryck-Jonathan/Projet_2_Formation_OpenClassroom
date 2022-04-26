@@ -130,11 +130,24 @@ overflow-x: hidden;
 
 #zonerecherche
 {
-
+padding-right:0px ;
 margin: 0px;
 
 }
 
+input:focus
+{
+
+outline: white;
+
+}
+
+input
+{
+
+width: 200px;
+
+}
 
 #bouton
 {
@@ -267,13 +280,13 @@ gap: 10px;
 .card
 {
 
-aspect-ratio: 2/1;
+
 width: 90%;  
-margin: 10px auto ; 
+margin: 10px auto 10px auto ; 
 border-radius: 25px;
 border: 1px solid white;
 overflow: visible;
-
+height: 320px;
 }
 
 
@@ -282,13 +295,13 @@ overflow: visible;
 .card-image 
 {
 
-aspect-ratio: 8/5;
-width: 98%;
+
+width: 100%;
 height: 100%;
 margin-top: -10px;
 border-radius: 25px;
 margin-bottom: 20px;
-
+background-color: #fff;
 }
 
 .card-image img
@@ -303,10 +316,10 @@ height: 60%;
 
 height: 50%;
 gap: 5%;
-	
+margin-bottom: 10px;
 }
 
-.card-body h5
+.card-body h3
 {
 
 font-size: 21px;
@@ -357,10 +370,9 @@ border-radius: 20px;
 
 .cardpop-image img
 {
+
 max-width: 100%;
- width: 100%;
-
-
+width: 100%;
 
 }
 
@@ -385,7 +397,7 @@ margin-left: 25px;
 }
 
 
-.cardpop-body h5
+.cardpop-body h3
 {
 
 font-size: 18px;

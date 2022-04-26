@@ -53,9 +53,9 @@ align-items: center;
 
 #logo img
 {
-
-width: 70%;
-height: 70%;
+padding-top: 10px;
+width: 50%;
+height:50%;
 
 }
 
@@ -450,7 +450,7 @@ margin-bottom: 10px;
 }
 
 
-.card-body h5 , .card-body p
+.card-body h3 , .card-body p
 {
 
 margin: 0px;
@@ -458,11 +458,11 @@ margin: 0px;
 }
 
 
-.card-body h5
+.card-body h3
 {
 
 color: black;
-font-size: 1.4em;
+font-size: 1.2em;
 
 }
 
@@ -470,7 +470,7 @@ font-size: 1.4em;
 .card-body p
 {
 
-font-size: 1.2em;
+font-size: 1.1em;
 
 }
 
@@ -523,9 +523,9 @@ font-size: 1em;
 #afficherplus
 {
 
-width: 90%;
+width: 95%;
 margin: auto;
-
+margin-bottom: 20px;
 }
 
 
@@ -561,7 +561,7 @@ display: flex;
 flex-direction: column;
 justify-content: flex-start;
 gap: 2%;
-position: relative;
+
 z-index: 10;
 box-sizing: border-box;
 
@@ -661,7 +661,7 @@ position: relative;
 }
 
 
-#hotelsoleil h5, #hotelbleublanc h5
+#hotelsoleil h3, #hotelbleublanc h3
 {
 
 margin-right: 30px;
@@ -669,7 +669,7 @@ margin-right: 30px;
 }
 
 
-.cardpop-body h5 , .cardpop-body p
+.cardpop-body h3 , .cardpop-body p
 {
 
 margin: 0;
@@ -677,7 +677,7 @@ margin: 0;
 }
 
 
-.cardpop-body h5
+.cardpop-body h3
 {
 
 font-size: 1.3em;
