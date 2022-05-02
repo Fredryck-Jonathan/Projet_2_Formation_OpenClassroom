@@ -177,10 +177,13 @@ align-items: baseline;
 
 #rechercherbleu:hover
 {
-	background-color: #0075Fb;
-	z-index: 20;
+
+background-color: #0075Fb;
+z-index: 20;
 
 }
+
+
 form
 {
 
@@ -195,17 +198,18 @@ align-items: baseline;
 section form input
 {
 	
-	background-color: white;
-	text-decoration: none;
-	padding: 17px 45px 17px 15px;
-	border: 1px #F2F2F2 solid;
-	z-index: 15;
+background-color: white;
+text-decoration: none;
+padding: 17px 45px 17px 15px;
+border: 1px #F2F2F2 solid;
+z-index: 15;
 
 }
 
 #loupe
 {
-visibility: hidden;
+
+display: none;
 
 }
 
@@ -223,8 +227,8 @@ align-items: center;
 
 #espacefiltre h2
 {
-font-size: 18px;
 
+font-size: 18px;
 
 }
 
@@ -293,8 +297,8 @@ padding: 15px 17px 15px 17px;
 #listfiltre li:hover, #listfiltre a:hover
 {
 
-	background-color: whitesmoke;
-	border-radius: 50px
+background-color: whitesmoke;
+border-radius: 50px
 
 }
 
@@ -313,6 +317,7 @@ justify-content: space-around;
 
 #infosup
 {
+
 display:flex ;
 flex-direction: row;
 align-items: baseline;
@@ -532,9 +537,9 @@ margin-bottom: 20px;
 #afficherplus a
 {
 
-	font-size: 22px;
-	text-decoration: none;
-	color: black;
+font-size: 22px;
+text-decoration: none;
+color: black;
 
 }
 
@@ -561,7 +566,6 @@ display: flex;
 flex-direction: column;
 justify-content: flex-start;
 gap: 2%;
-
 z-index: 10;
 box-sizing: border-box;
 

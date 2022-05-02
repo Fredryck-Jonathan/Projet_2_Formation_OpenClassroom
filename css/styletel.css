@@ -6,12 +6,7 @@
 /*Application de la police sur toute la page */
 
 
-#wrapper
-{
 
-overflow-x: hidden;
-
-}
 
 .dimensionpage
 {
@@ -36,12 +31,6 @@ border: 0;
 }
 
 
-#content-wrap
-{
-
-padding-bottom: 0px;
-overflow-x: hidden
-}
 
 
 
@@ -164,7 +153,7 @@ flex-direction: row-reverse;
 #loupe
 {
 
-visibility: visible;
+display:flex;
 color: white;
 font-size: 18px;
 background-color: #0065FC;
@@ -195,7 +184,7 @@ padding: 16px 20px 18px 10px;
 #rechercherbleu
 {
 
-visibility: hidden;
+display: none;
 
 }
 
